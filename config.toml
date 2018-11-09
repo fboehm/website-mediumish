@@ -1,0 +1,72 @@
+baseURL = "https://fboehm.us/"
+languageCode = "en-us"
+title = "Frederick Boehm's Website"
+theme = "mediumish-gohugo-theme"
+summaryLength = 25
+copyright = "Frederick Boehm"
+enableEmoji = true
+publishDir = "docs"
+disqusShortname = "fred3"
+googleAnalytics = "UA-46757486-5"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+
+[params]
+  logo = "/images/logo.png"
+  description ="the clean blog!"
+  #mailchimp = "you can provide a mailchimp-link here"
+
+[params.author]
+  name = "Frederick Boehm"
+  thumbnail = "/images/author.png"
+  description = "Biostatistician"
+
+[params.index]
+  picture = "/images/author.png"
+  title = "Frederick Boehm"
+  subtitle = "..."
+  mdtext = '''
+Currently trying to get this blog running, still don't know what the blog will be about!\
+**This textblock is a demonstration of the mdtext-param.**\
+### This is a markdown heading
+'''
+  alertbar = true
+
+[params.social]
+  github = "fboehm"
+#  linkedin = "<username>"
+#  xing = "<username>"
+#  medium = "<username>"
+#  twitter = "<username>"
+
+## Main Menu
+[[menu.main]]
+    name = "Blog"
+    weight = 300
+    identifier = "blog"
+    url = "/blog"
+[[menu.main]]
+    name = "about"
+    identifier = "about"
+    weight = 200
+    url = "/"
+[[menu.main]]
+    name = "software"
+    identifier = "software"
+    weight = 200
+    url = "/static/software"
+[[menu.main]]
+    name = "teaching"
+    identifier = "teaching"
+    weight = 200
+    url = "/static/teaching"
+[[menu.main]]
+    name = "publications"
+    identifier = "publications"
+    weight = 200
+    url = "/static/publications"
+[[menu.main]]
+    name = "presentations"
+    identifier = "presentations"
+    weight = 200
+    url = "/static/presentations"
