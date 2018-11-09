@@ -1,0 +1,13 @@
+---
+title: "Publications" 
+author: "Frederick Boehm" 
+date: "`r lubridate::now()`" 
+output: html_document 
+bibliography: boehm.bib 
+nocite: '@*' 
+csl: ieee-with-url.csl
+---
+
+
+
+
