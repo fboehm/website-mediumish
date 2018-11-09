@@ -208,7 +208,7 @@
   <!-- Citation -->
   <citation collapse="citation-number">
     <sort>
-      <key variable="citation-number"/>
+      <key variable="issued" sort="descending"/>
     </sort>
     <layout delimiter=", ">
       <group prefix="[" suffix="]" delimiter=", ">
