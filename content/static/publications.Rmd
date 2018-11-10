@@ -4,10 +4,56 @@ author: "Frederick Boehm"
 date: "`r lubridate::now()`" 
 output: html_document 
 bibliography: boehm.bib 
-nocite: '@*' 
-csl: american-statistical-association.csl
 ---
 
 
 
+```{r, echo = FALSE}
+library(RefManageR)
+```
 
+```{r, echo = FALSE}
+BibOptions(check.entries = FALSE, style = "markdown", bib.style = "authoryear", cite.style = 'alphabetic', sorting = "ydnt", style = "markdown", max.names = 6)
+ReadBib("boehm.bib", check = FALSE) -> boehm
+```
+
+## Peer-reviewed journal articles
+
+
+```{r, results = 'asis', echo = FALSE}
+NoCite(boehm)
+arts <- boehm[bibtype = "article"]
+PrintBibliography(arts[keywords = "peer-reviewed"])
+```
+
+## Other articles
+
+
+```{r, results = "asis", echo = FALSE}
+PrintBibliography(arts[keywords = "other"])
+```
+
+## Edited books
+
+
+```{r, results = "asis", echo = FALSE}
+PrintBibliography(boehm[bibtype = "book"])
+```
+
+
+
+## Book chapters
+
+
+```{r, results = "asis", echo = FALSE}
+PrintBibliography(boehm[bibtype = "incollection"])
+```
+
+
+
+## Conference proceedings
+
+
+```{r, results = "asis", echo = FALSE}
+PrintBibliography(boehm[bibtype = "inproceedings"])
+```
