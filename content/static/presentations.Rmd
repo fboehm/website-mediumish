@@ -1,0 +1,17 @@
+---
+title: "Presentations" 
+author: "Frederick Boehm" 
+date: "`r lubridate::now()`" 
+output: html_document 
+bibliography: boehm.bib 
+---
+
+
+- International Mammalian Genome Conference, November 11-14, 2018
+Rio Mar, Puerto Rico
+
+- Joint Statistical Meetings, August 1, 2018, Vancouver, British Columbia, Canada
+
+- Complex Trait Community meeting, June 20, 2018, Glasgow, Scotland
+
+

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="generator" content="Hugo 0.50" />
+	
+	<link rel="icon" href="/images/vitruvian_mouse-small.jpg">
+	
+	<title>reticulate R package &amp; Travis | Frederick Boehm&#39;s Website</title>
+	
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="/css/medium.css" rel="stylesheet">
+	<link href="/css/additional.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+        
+        <a class="navbar-brand" href="//">
+
+            
+            <img src="/images/vitruvian_mouse-small.jpg" alt="logo">
+            
+        </a>
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+            
+            <ul class="navbar-nav ml-auto">
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">About</a>
+                </li>
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/static/presentations">Presentations</a>
+                </li>
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/static/publications">Publications</a>
+                </li>
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/static/software">Software</a>
+                </li>
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/static/teaching">Teaching</a>
+                </li>
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+
+        <div class="site-content">   
+            <div class="container">
+<div class="mainheading">
+    <h1 class="sitetitle">Frederick Boehm&#39;s Website</h1>
+    <p class="lead">
+         Biostatistics, genetics, medicine, open science
+    </p>
+</div><div class="main-content">
+        
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-2 pl-0"><div class="share">
+    <p>Share</p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=reticulate%20R%20package%20%26%20Travis&url=%2fblog%2f2018-04-01-reticulate-r-package-travis%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+        
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://facebook.com/sharer.php?u=%2fblog%2f2018-04-01-reticulate-r-package-travis%2f" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        </li>
+        
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://plus.google.com/share?url=%2fblog%2f2018-04-01-reticulate-r-package-travis%2f" onclick="window.open(this.href, 'google-share', 'width=550,height=435');return false;">
+        <i class="fab fa-google"></i>
+        </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=%2fblog%2f2018-04-01-reticulate-r-package-travis%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
+        <i class="fab fa-xing"></i>
+        </a>
+        </li>        
+    </ul>
+
+    
+        <div class="sep">
+        </div>				
+        <ul>
+            <li> 
+            <a  class="small smoothscroll" href="#disqus_thread"></a>
+            </li>
+        </ul>
+    
+</div></div>
+                                
+                <div class="col-md-9 flex-first flex-md-unordered">
+                    <div class="mainheading">
+                        	
+                        
+                        
+                        
+                        <div class="post-top-meta">
+                            <div>
+                                <img class="author-thumb" src="/images/fredboehm-cr.jpg" alt="Frederick Boehm">
+                            </div>
+                            <div >
+                                <a target="_blank" class="link-dark">Frederick Boehm</a><br>
+                                <span class="author-description">
+                                    Biostatistics, genetics, medicine, open science<br>
+                                    <i class="far fa-star"></i>
+                                    Apr 1, 2018
+                                    <i class="far fa-clock clock"></i>
+                                    2 min read
+                                </span>					
+                            </div>
+                        </div>			
+                        	
+                        
+                                                
+                        
+                        <h1 class="posttitle">reticulate R package &amp; Travis</h1> 
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+                    <div class="article-post">
+                        
+
+
+<p>I like to use <a href="https://travis-ci.org">Travis CI</a> with my R packages. I recently wrote a R package, <a href="https://github.com/fboehm/limmbo2"><code>limmbo2</code></a>, that is a wrapper for the python module <a href="https://github.com/HannahVMeyer/limmbo"><code>limmbo</code></a>. I used the R package <a href="https://github.com/rstudio/reticulate"><code>reticulate</code></a>, from Rstudio. I struggled for about 3 hours to write a <code>.travis.yml</code> file for <code>limmbo2</code>. Finally, I found a viable solution. I’m writing this blog post in hopes that it might be useful to myself and others in the future.</p>
+<div id="why-is-using-travis-ci-potentially-tricky-for-packages-that-use-reticulate" class="section level2">
+<h2>Why is using Travis CI potentially tricky for packages that use <code>reticulate</code>?</h2>
+<p><code>reticulate</code> has python dependencies, so you have to ensure that any python modules that your package (or <code>reticulate</code>) uses are installed properly when Travis CI runs. Furthermore, the authors of the <code>limmbo</code> python module recommend that you use <code>conda</code> to install <code>limmbo</code>. This means that I needed to install <code>conda</code> on Travis CI. Fortunately, a web search turned up some useful yaml. I decided to set the python version variable to 2.7. I didn’t want to use python3, largely because I’ve really only worked with python2 in the past.</p>
+</div>
+<div id="what-is-a-solution-to-this" class="section level2">
+<h2>What is a solution to this?</h2>
+<p>Even though I haven’t yet written unit tests for <code>limmbo2</code>, I’m excited to have a .travis.yml file that results in a passing build on Travis CI.</p>
+<p>Here is the <a href="https://github.com/fboehm/limmbo2/blob/b3e035b7bc988cb235486d2da38bbe5c54daa7b6/.travis.yml">.travis.yml file</a>.</p>
+</div>
+<div id="caution" class="section level2">
+<h2>Caution</h2>
+<p>I need to caution readers that I haven’t verified that every line of my .travis.yml is <em>needed</em>. Rather, I just know that the current version yields a passing build.</p>
+<p>If you have ideas for how I might improve the .travis.yml file, please write them in the comments, or submit a pull request.</p>
+<p>Thanks!</p>
+</div>
+
+                    </div>
+                    
+                    
+                    <div class="after-post-tags">
+                        <ul class="tags">
+                        
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                    <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+                    
+                        <a class="prev d-block col-md-6" href="/static/imprint/"> &laquo; Imprint</a>
+                    
+                    
+                        <a class="next d-block col-md-6 text-lg-right" href="/blog/2018-03-30-limmbo2-r-package-now-on-github/">limmbo2 R package now on Github &raquo;</a>
+                    
+                    <div class="clearfix"></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+<div class="container">
+    <div id="comments" class="row justify-content-center mb-5">
+        <div class="col-md-8">              
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fred3" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>               
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="alertbar">
+	<div class="container text-center">
+        <span>
+            
+                <img src="/images/vitruvian_mouse-small.jpg" alt="logo">
+            
+            &nbsp; Never miss a <b>story</b>, subscribe to our newsletter
+        </span>
+
+        <form action="https://fboehm.us19.list-manage.com/subscribe/post?u=40a2bbc4be9f309414d4d7089&amp;amp;id=3feb11be28" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+		<input type="email" placeholder="Email" name="EMAIL" autocomplete="on" required>
+	    	
+	    	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="" tabindex="-1" value=""></div>
+		<input type="submit" value="Subscribe" name="subscribe" >
+        </form>
+
+	</div>
+</div> 
+
+            </div>
+<div class="jumbotron fortags">	
+	<div class="d-flex h-100">
+		<div class="col-md-4 align-self-center text-center h-100">
+            <div class="d-flex align-items-center justify-content-center h-100">
+				<h2 class="d-md-block d-none align-self-center">Explore →</h2>
+			</div>
+		</div>
+		<div class="col-md-8 align-self-center text-center">
+        
+		</div>
+	</div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                &copy; Copyright Frederick Boehm
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a target="_blank" href="https://www.wowthemes.net">Mediumish Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+
+    
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+    
+<script src="/js/mediumish.js"></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-46757486-5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    </body>
+</html>

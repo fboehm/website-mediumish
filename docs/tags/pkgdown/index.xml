@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pkgdown on Frederick Boehm&#39;s Website</title>
+    <link>/tags/pkgdown/</link>
+    <description>Recent content in Pkgdown on Frederick Boehm&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Frederick Boehm</copyright>
+    <lastBuildDate>Sat, 10 Nov 2018 10:56:01 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/pkgdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>pkgdown R package for generating package websites on Github</title>
+      <link>/blog/pkgdown-for-generating-package-websites-on-github/</link>
+      <pubDate>Sat, 10 Nov 2018 10:56:01 +0000</pubDate>
+      
+      <guid>/blog/pkgdown-for-generating-package-websites-on-github/</guid>
+      <description>I recently learned about the R package, pkgdown, an R package that provides functions that make it easy to build a website from an R package on Github.</description>
+    </item>
+    
+  </channel>
+</rss>

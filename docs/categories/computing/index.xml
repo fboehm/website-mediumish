@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computing on Frederick Boehm&#39;s Website</title>
+    <link>/categories/computing/</link>
+    <description>Recent content in Computing on Frederick Boehm&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Frederick Boehm</copyright>
+    <lastBuildDate>Sat, 10 Nov 2018 10:55:59 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/computing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>limmbo2 R package now on Github</title>
+      <link>/blog/limmbo2-r-package-now-on-github/</link>
+      <pubDate>Sat, 10 Nov 2018 10:55:59 +0000</pubDate>
+      
+      <guid>/blog/limmbo2-r-package-now-on-github/</guid>
+      <description>I have posted to Github the R package limmbo2. limmbo2 is a R wrapper to the freely available python module limmbo.</description>
+    </item>
+    
+  </channel>
+</rss>

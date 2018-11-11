@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Systems Genetics on Frederick Boehm&#39;s Website</title>
+    <link>/categories/systems-genetics/</link>
+    <description>Recent content in Systems Genetics on Frederick Boehm&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Frederick Boehm</copyright>
+    <lastBuildDate>Sat, 10 Nov 2018 10:55:59 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/systems-genetics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting started with the reticulate R package</title>
+      <link>/blog/getting-started-with-the-reticulate-r-package/</link>
+      <pubDate>Sat, 10 Nov 2018 10:55:59 +0000</pubDate>
+      
+      <guid>/blog/getting-started-with-the-reticulate-r-package/</guid>
+      <description>Motivation My colleague Rene Welch brought to my attention a recent pre-print, “LiMMBo: a simple, scalable approach for linear mixed models in high-dimensional genetic association studies” by Hannah Meyer, Francesco Casale, Oliver Stegle, and Ewan Birney.</description>
+    </item>
+    
+  </channel>
+</rss>

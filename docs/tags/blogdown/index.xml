@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogdown on Frederick Boehm&#39;s Website</title>
+    <link>/tags/blogdown/</link>
+    <description>Recent content in Blogdown on Frederick Boehm&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Frederick Boehm</copyright>
+    <lastBuildDate>Sun, 07 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting started with blogdown</title>
+      <link>/blog/2017-05-07-getting-started-with-blogdown/</link>
+      <pubDate>Sun, 07 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2017-05-07-getting-started-with-blogdown/</guid>
+      <description>While browsing the internet, I stumbled upon Rstudio’s new package blogdown. I read posts from Karl Broman and found the the book that the package authors - Yihui Xie and Amber Thomas - freely share.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,13 @@
+---
+title: "Software" 
+author: "Frederick Boehm" 
+date: "`r lubridate::now()`" 
+output: html_document 
+bibliography: boehm.bib 
+---
+
+
+- `qtl2pleio`: Testing pleiotropy vs. separate QTL in multiparental populations
+
+- `gemma2`: Multivariate random effects for genetics studies
+

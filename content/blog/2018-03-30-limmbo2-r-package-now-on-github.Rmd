@@ -1,0 +1,11 @@
+---
+title: limmbo2 R package now on Github
+author: Frederick Boehm
+date: 2018-03-30
+publisheddate: 2018-03-30
+lastmod: 2018-11-10
+type: "post"
+comments: true
+---
+
+I have posted to Github the R package [`limmbo2`](https://github.com/fboehm/limmbo2). `limmbo2` is a R wrapper to the freely available python module [`limmbo`](https://github.com/HannahVMeyer/limmbo). I mention my interest in `limmbo` in an earlier blog post, so I won't repeat it here.

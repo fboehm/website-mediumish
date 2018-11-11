@@ -12,23 +12,30 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 
 [params]
-  logo = "/images/logo.png"
-  description ="the clean blog!"
-  #mailchimp = "you can provide a mailchimp-link here"
+  logo = "/images/vitruvian_mouse-small.jpg"
+  description ="Biostatistics, genetics, medicine, open science"
+  mailchimp = "https://fboehm.us19.list-manage.com/subscribe/post?u=40a2bbc4be9f309414d4d7089&amp;id=3feb11be28"
+  mailprotector = "b_40a2bbc4be9f309414d4d7089_3feb11be28"
 
 [params.author]
   name = "Frederick Boehm"
-  thumbnail = "/images/author.png"
-  description = "Biostatistician"
+  thumbnail = "/images/FredBoehm-cr.jpg"
+  description = "Biostatistics, genetics, medicine, open science"
 
 [params.index]
-  picture = "/images/author.png"
+  picture = "/images/FredBoehm.jpg"
   title = "Frederick Boehm"
-  subtitle = "..."
+  subtitle = "Biostatistics, genetics, medicine, open science"
   mdtext = '''
-Currently trying to get this blog running, still don't know what the blog will be about!\
-**This textblock is a demonstration of the mdtext-param.**\
-### This is a markdown heading
+I'm a biostatistician in Madison, Wisconsin, USA.\
+I'm studying for a Ph.D. in statistics at the University of Wisconsin-Madison.\
+My research is in statistical methods for systems genetics studies. In this \
+setting, my colleagues and I developed a hypothesis test of pleiotropy vs. separate QTL\
+in multiparental populations. We implemented our methods in the software package `qtl2pleio`.
+
+I previously earned B.S. (2001) and M.D. (2007) degrees from the University of Wisconsin-Madison.\
+I worked as a statistician with the Value-Added Research Center and the Genetics Coordinating Center.\
+
 '''
   alertbar = true
 
@@ -41,7 +48,7 @@ Currently trying to get this blog running, still don't know what the blog will b
 
 ## Main Menu
 [[menu.main]]
-    name = "Blog"
+    name = "blog"
     weight = 300
     identifier = "blog"
     url = "/blog"

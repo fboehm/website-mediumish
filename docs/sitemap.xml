@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/static/teaching/</loc>
+    <lastmod>2018-11-10T10:26:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/static/software/</loc>
+    <lastmod>2018-11-10T10:10:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/static/presentations/</loc>
+    <lastmod>2018-11-10T10:05:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/static/publications/</loc>
+    <lastmod>2018-11-09T19:35:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/static/imprint/</loc>
+    <lastmod>2018-10-07T11:12:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2018-04-01-reticulate-r-package-travis/</loc>
+    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2018-03-30-limmbo2-r-package-now-on-github/</loc>
+    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2018-03-19-getting-started-with-the-reticulate-r-package/</loc>
+    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2017-09-10-joan-didion-s-on-self-respect/</loc>
+    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2018-04-12-pkgdown-for-generating-package-websites-on-github/</loc>
+    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2017-08-16-mathematical-writing-by-donald-knuth-tracy-larrabee-and-paul-roberts/</loc>
+    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2017-07-03-john-roberts-s-commencement-address/</loc>
+    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2017-05-07-getting-started-with-blogdown/</loc>
+    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
+    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-11-10T10:26:17+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/static/</loc>
+    <lastmod>2018-11-10T10:26:17+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
