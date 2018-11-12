@@ -7,10 +7,10 @@ bibliography: boehm.bib
 ---
 
 
-- `qtl2pleio`: Testing pleiotropy vs. separate QTL in multiparental populations  [![html](../../images/html-icon.png)](qtl2pleio)
-[![github](../../images/github-icon.png)](https://github.com/fboehm/qtl2pleio)
+- `qtl2pleio`: Testing pleiotropy vs. separate QTL in multiparental populations  [![html](../../images/html-icon.png)](qtl2pleio "Website")
+[![github](../../images/github-icon.png)](https://github.com/fboehm/qtl2pleio "Github repository")
 
 
-- `gemma2`: Multivariate random effects for genetics studies  [![github](../../images/github-icon.png)](https://github.com/fboehm/gemma2)
+- `gemma2`: Multivariate random effects for genetics studies  [![github](../../images/github-icon.png)](https://github.com/fboehm/gemma2 "Github repository")
 
 

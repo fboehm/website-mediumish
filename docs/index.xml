@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Frederick Boehm</copyright>
-    <lastBuildDate>Sun, 11 Nov 2018 08:11:18 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Nov 2018 20:20:25 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Software</title>
       <link>/static/software/</link>
-      <pubDate>Sun, 11 Nov 2018 08:11:18 +0000</pubDate>
+      <pubDate>Sun, 11 Nov 2018 20:20:25 +0000</pubDate>
       
       <guid>/static/software/</guid>
       <description>  qtl2pleio: Testing pleiotropy vs. separate QTL in multiparental populations  
