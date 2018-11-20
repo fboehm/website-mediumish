@@ -19,7 +19,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params.author]
   name = "Frederick Boehm"
-  thumbnail = "/images/FredBoehm-cr.jpg"
+  thumbnail = "/images/FredBoehm-cr-smallsize.jpg"
   description = "Biostatistics, genetics, medicine, open science"
 
 [params.index]
