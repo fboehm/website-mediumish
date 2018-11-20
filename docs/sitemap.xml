@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/static/presentations/</loc>
+    <lastmod>2018-11-20T17:39:01+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/static/software/</loc>
     <lastmod>2018-11-11T20:20:25+00:00</lastmod>
   </url>
@@ -10,11 +15,6 @@
   <url>
     <loc>/static/teaching/</loc>
     <lastmod>2018-11-10T10:26:17+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/static/presentations/</loc>
-    <lastmod>2018-11-10T10:05:21+00:00</lastmod>
   </url>
   
   <url>
@@ -75,13 +75,13 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-11-11T20:20:25+00:00</lastmod>
+    <lastmod>2018-11-20T17:39:01+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/static/</loc>
-    <lastmod>2018-11-11T20:20:25+00:00</lastmod>
+    <lastmod>2018-11-20T17:39:01+00:00</lastmod>
     <priority>0</priority>
   </url>
   
