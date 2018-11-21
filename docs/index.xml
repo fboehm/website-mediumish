@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Frederick Boehm</copyright>
-    <lastBuildDate>Wed, 21 Nov 2018 11:40:49 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Nov 2018 11:45:17 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,11 +15,10 @@
     <item>
       <title>Presentations</title>
       <link>/static/presentations/</link>
-      <pubDate>Wed, 21 Nov 2018 11:40:49 +0000</pubDate>
+      <pubDate>Wed, 21 Nov 2018 11:45:17 +0000</pubDate>
       
       <guid>/static/presentations/</guid>
-      <description>International Mammalian Genome Conference, November 11-14, 2018, Rio Mar, Puerto Rico  
- Joint Statistical Meetings, August 1, 2018, Vancouver, British Columbia, Canada</description>
+      <description>International Mammalian Genome Conference, November 11-14, 2018, Rio Mar, Puerto Rico    Winner of best poster award  Joint Statistical Meetings, August 1, 2018, Vancouver, British Columbia, Canada</description>
     </item>
     
     <item>
