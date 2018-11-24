@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/blog/2018-11-24-r-package-site-with-pkgdown/</loc>
+    <lastmod>2018-11-24T10:01:53-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/static/presentations/</loc>
     <lastmod>2018-11-21T11:45:17+00:00</lastmod>
   </url>
@@ -64,7 +69,7 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-24T10:01:53-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -75,7 +80,25 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-11-21T11:45:17+00:00</lastmod>
+    <lastmod>2018-11-24T10:01:53-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/pkgdown/</loc>
+    <lastmod>2018-11-24T10:01:53-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2018-11-24T10:01:53-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r-package/</loc>
+    <lastmod>2018-11-24T10:01:53-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -87,6 +110,7 @@
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2018-11-24T10:01:53-06:00</lastmod>
     <priority>0</priority>
   </url>
   

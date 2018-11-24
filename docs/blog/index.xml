@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Frederick Boehm</copyright>
-    <lastBuildDate>Sun, 01 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Nov 2018 10:01:53 -0600</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R package site incorporation into my personal website</title>
+      <link>/blog/2018-11-24-r-package-site-with-pkgdown/</link>
+      <pubDate>Sat, 24 Nov 2018 10:01:53 -0600</pubDate>
+      
+      <guid>/blog/2018-11-24-r-package-site-with-pkgdown/</guid>
+      <description>Overview I’ve been developing the R package qtl2pleio. It’s now at a stage where others can use it. I recently found the R package pkgdown, which allows developers to build, in an automated fashion, websites for their packages.</description>
+    </item>
     
     <item>
       <title>reticulate R package &amp; Travis</title>

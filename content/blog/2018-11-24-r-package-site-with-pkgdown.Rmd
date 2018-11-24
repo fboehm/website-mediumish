@@ -1,0 +1,32 @@
+---
+title: "R package site incorporation into my personal website"
+date: 2018-11-24T10:01:53-06:00
+publishdate: 2018-11-24T10:01:53-06:00
+image: "qtl2pleio.png"
+tags: [R, pkgdown, R package]
+comments: true
+draft: false
+---
+
+## Overview
+
+I've been developing the R package `qtl2pleio`. It's now at a stage where others can use it. I recently found the R package `pkgdown`, which allows developers to build, in an automated fashion, websites for their packages. I posted an entry on `pkgdown` earlier this year. I now wish to communicate my strategy for incorporating the package site into my personal website, https://fboehm.us. I write this primarily as a reminder to myself. 
+
+## The solution: Specify `destination` in `_pkgdown.yml`
+
+My initial strategy was to use a Makefile to automate copying of my pkgdown site from `qtl2pleio/docs` to a subdirectory in my website repository, which, in my case, has the path `website-mediumish/docs/static/software/qtl2pleio`. We know that `pkgdown`, by default, builds the site in the (package) subdirectory `docs`. What I learned only yesterday is that the field `destination` in `_pkgdown.yml` can be used to specify an alternative path at which to build the site. I thus added to my `_pkgdown.yml` the text: 
+
+`destination: ~/Documents/website-mediumish/docs/static/software/qtl2pleio`
+
+You can view my initial `_pkgdown.yml` for `qtl2pleio` [here](https://github.com/fboehm/qtl2pleio/blob/99248caa9b8a03b8d1d0c57c978cec5dc606639c/_pkgdown.yml).
+
+Now, when I type 
+
+```{r eval = FALSE}
+pkgdown::build_site()
+```
+
+from within the directory for the `qtl2pleio` R package, I see that the site is built at the specified destination, *i.e.*, in my personal website subdirectory. 
+
+Here is my [personal website](https://fboehm.us) and [here is the sub-site for `qtl2pleio`](https://fboehm.us/static/software/qtl2pleio).
+

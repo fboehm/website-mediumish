@@ -1,0 +1,26 @@
+---
+title: "R package site incorporation into my personal website"
+date: 2018-11-24T10:01:53-06:00
+publishdate: 2018-11-24T10:01:53-06:00
+image: "qtl2pleio.png"
+tags: [R, pkgdown, R package]
+comments: true
+draft: false
+---
+
+
+
+<div id="overview" class="section level2">
+<h2>Overview</h2>
+<p>I’ve been developing the R package <code>qtl2pleio</code>. It’s now at a stage where others can use it. I recently found the R package <code>pkgdown</code>, which allows developers to build, in an automated fashion, websites for their packages. I posted an entry on <code>pkgdown</code> earlier this year. I now wish to communicate my strategy for incorporating the package site into my personal website, <a href="https://fboehm.us" class="uri">https://fboehm.us</a>. I write this primarily as a reminder to myself.</p>
+</div>
+<div id="the-solution-specify-destination-in-_pkgdown.yml" class="section level2">
+<h2>The solution: Specify <code>destination</code> in <code>_pkgdown.yml</code></h2>
+<p>My initial strategy was to use a Makefile to automate copying of my pkgdown site from <code>qtl2pleio/docs</code> to a subdirectory in my website repository, which, in my case, has the path <code>website-mediumish/docs/static/software/qtl2pleio</code>. We know that <code>pkgdown</code>, by default, builds the site in the (package) subdirectory <code>docs</code>. What I learned only yesterday is that the field <code>destination</code> in <code>_pkgdown.yml</code> can be used to specify an alternative path at which to build the site. I thus added to my <code>_pkgdown.yml</code> the text:</p>
+<p><code>destination: ~/Documents/website-mediumish/docs/static/software/qtl2pleio</code></p>
+<p>You can view my initial <code>_pkgdown.yml</code> for <code>qtl2pleio</code> <a href="https://github.com/fboehm/qtl2pleio/blob/99248caa9b8a03b8d1d0c57c978cec5dc606639c/_pkgdown.yml">here</a>.</p>
+<p>Now, when I type</p>
+<pre class="r"><code>pkgdown::build_site()</code></pre>
+<p>from within the directory for the <code>qtl2pleio</code> R package, I see that the site is built at the specified destination, <em>i.e.</em>, in my personal website subdirectory.</p>
+<p>Here is my <a href="https://fboehm.us">personal website</a> and <a href="https://fboehm.us/static/software/qtl2pleio">here is the sub-site for <code>qtl2pleio</code></a>.</p>
+</div>

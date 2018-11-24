@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pkgdown on Frederick Boehm&#39;s Website</title>
-    <link>/tags/pkgdown/</link>
-    <description>Recent content in Pkgdown on Frederick Boehm&#39;s Website</description>
+    <title>R Package on Frederick Boehm&#39;s Website</title>
+    <link>/tags/r-package/</link>
+    <description>Recent content in R Package on Frederick Boehm&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Frederick Boehm</copyright>
     <lastBuildDate>Sat, 24 Nov 2018 10:01:53 -0600</lastBuildDate>
     
-	<atom:link href="/tags/pkgdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/r-package/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

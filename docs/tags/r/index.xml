@@ -7,18 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Frederick Boehm</copyright>
-    <lastBuildDate>Sat, 10 Nov 2018 10:55:59 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Nov 2018 10:01:53 -0600</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>limmbo2 R package now on Github</title>
-      <link>/blog/limmbo2-r-package-now-on-github/</link>
-      <pubDate>Sat, 10 Nov 2018 10:55:59 +0000</pubDate>
+      <title>R package site incorporation into my personal website</title>
+      <link>/blog/2018-11-24-r-package-site-with-pkgdown/</link>
+      <pubDate>Sat, 24 Nov 2018 10:01:53 -0600</pubDate>
       
-      <guid>/blog/limmbo2-r-package-now-on-github/</guid>
-      <description>I have posted to Github the R package limmbo2. limmbo2 is a R wrapper to the freely available python module limmbo.</description>
+      <guid>/blog/2018-11-24-r-package-site-with-pkgdown/</guid>
+      <description>Overview I’ve been developing the R package qtl2pleio. It’s now at a stage where others can use it. I recently found the R package pkgdown, which allows developers to build, in an automated fashion, websites for their packages.</description>
     </item>
     
   </channel>
