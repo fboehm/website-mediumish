@@ -4,4 +4,7 @@ pkgdown_sha: 44460e6d6aae008684f68bf48a8a51e18c38a08a
 articles:
   recla-analysis: recla-analysis.html
   testing-pleiotropy-vs-separate-qtl: testing-pleiotropy-vs-separate-qtl.html
+urls:
+  reference: https://fboehm.us/static/software/qtl2pleio/reference
+  article: https://fboehm.us/static/software/qtl2pleio/articles
 
