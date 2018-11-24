@@ -2,9 +2,11 @@
 title: "R package site incorporation into my personal website"
 date: 2018-11-24T10:01:53-06:00
 publishdate: 2018-11-24T10:01:53-06:00
-image: "qtl2pleio.png"
+lastmod: 2018-11-24
+image: "/images/blog/qtl2pleio.png"
 tags: [R, pkgdown, R package]
 comments: true
+type: "post"
 draft: false
 ---
 

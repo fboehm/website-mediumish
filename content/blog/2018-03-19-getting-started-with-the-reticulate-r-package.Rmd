@@ -3,9 +3,10 @@ title: Getting started with the reticulate R package
 author: Frederick Boehm
 date: 2018-03-19
 publisheddate: 2018-03-19
-lastmod: 2018-11-10
+lastmod: 2018-11-24
 type: "post"
 comments: true
+image: "/images/blog/reticulated_python.png"
 ---
 
 ## Motivation 
