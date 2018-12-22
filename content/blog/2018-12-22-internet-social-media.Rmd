@@ -1,0 +1,25 @@
+---
+title: World-wide Web and Social Media
+author: Frederick Boehm
+date: '2018-12-22'
+slug: internet-social-media
+publisheddate: 2018-12-22
+lastmod: 2018-12-22
+type: "post"
+comments: true
+---
+
+I've followed a series of blog posts from Cal Newport at http://calnewport.com/blog/ (with posts like [this](http://calnewport.com/blog/2018/12/20/from-the-hyperlink-to-the-stream-hossein-derakshans-critique-of-the-internet-in-the-age-of-social-media/)) in which Newport criticizes social media platforms for, among other things, limiting the scope of internet browsing. Newport, a computer science professor and writer, proudly has never had a social media account. 
+
+Until March 2018, I regularly consumed information from Facebook, Twitter, and even Instagram and Linkedin. Termination of these accounts aligned with my larger professional and scholarly goals of wanting to focus more on my studies and other, engaging, activities. Ambivalently, I opened a new Twitter account in December 2018 to follow, for the moment, academic statisticians. 
+
+Today I encountered a blog post from Austin Kleon (https://austinkleon.com/2018/12/21/surfs-up/). Kleon is a writer and artist. I first encountered his work several years ago - I can't honestly remember how I first came across it. I might have seen his first book - *Steal like an artist* - in a bookstore. Kleon writes in the post:
+
+> How much better off we’d be online, I thought, if we went back to truly emulating surfers: leaving the crowded beaches, seeking waves in obscure locations, etc. Social media has “streams” (you can’t surf a stream) or worse, “feeds” (like pigs at a trough). I want the sea, man. I want to surf again!
+
+My first memories of using the world-wide web and email are from, I think, 1995. I was a high school student, and my family had purchased a dial-up modem and a subscription from a (now defunct) local internet service provider (whose name I forget at the moment). I would dial in to the local provider's headquarters in downtown Stevens Point, Wisconsin before launching Netscape Navigator to visit university websites. I remember a profound joy at discovering that I could tour distant colleges and universities through my computer. (I applied to colleges in the fall of 1995.) 
+
+
+
+
+

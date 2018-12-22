@@ -3,28 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/2018-11-24-r-package-site-with-pkgdown/</loc>
-    <lastmod>2018-11-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/static/presentations/</loc>
-    <lastmod>2018-11-21T11:45:17+00:00</lastmod>
+    <loc>/static/teaching/</loc>
+    <lastmod>2018-12-22T14:54:44+00:00</lastmod>
   </url>
   
   <url>
     <loc>/static/software/</loc>
-    <lastmod>2018-11-11T20:20:25+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/static/teaching/</loc>
-    <lastmod>2018-11-10T10:26:17+00:00</lastmod>
+    <lastmod>2018-12-22T14:54:43+00:00</lastmod>
   </url>
   
   <url>
     <loc>/static/publications/</loc>
-    <lastmod>2018-11-09T19:35:27+00:00</lastmod>
+    <lastmod>2018-12-22T14:54:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/static/presentations/</loc>
+    <lastmod>2018-12-22T14:54:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/internet-social-media/</loc>
+    <lastmod>2018-12-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2018-11-24-r-package-site-with-pkgdown/</loc>
+    <lastmod>2018-11-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -69,7 +74,7 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2018-11-24T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -80,7 +85,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-11-24T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-22T14:54:44+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -104,7 +109,7 @@
   
   <url>
     <loc>/static/</loc>
-    <lastmod>2018-11-21T11:45:17+00:00</lastmod>
+    <lastmod>2018-12-22T14:54:44+00:00</lastmod>
     <priority>0</priority>
   </url>
   
