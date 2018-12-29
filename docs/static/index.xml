@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Statics on Frederick Boehm&#39;s Website</title>
-    <link>/static/</link>
+    <link>https://fboehm.us/static/</link>
     <description>Recent content in Statics on Frederick Boehm&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Frederick Boehm</copyright>
-    <lastBuildDate>Sat, 22 Dec 2018 14:54:44 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Dec 2018 15:59:18 +0000</lastBuildDate>
     
-	<atom:link href="/static/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fboehm.us/static/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Teaching</title>
-      <link>/static/teaching/</link>
-      <pubDate>Sat, 22 Dec 2018 14:54:44 +0000</pubDate>
+      <link>https://fboehm.us/static/teaching/</link>
+      <pubDate>Fri, 28 Dec 2018 15:59:18 +0000</pubDate>
       
-      <guid>/static/teaching/</guid>
+      <guid>https://fboehm.us/static/teaching/</guid>
       <description> Short courses and workshops  Data Carpentry Genomics  September 15-16, 2018, Rolla, Missouri, USA: https://yeemey.github.io/2018-09-15-und-mbdh/  Preparing to teach statistics (instructor)  Spring 2018  Topic models for computational text analysis  Spring 2014, Summer 2016    Formal courses  Educating a diverse nation (co-facilitator)  Spring 2017 (in-person) &amp;amp; Fall 2017 (online)  Introductory statistics (instructor of record)  Fall 2016, Spring 2016, Fall 2015, Summer 2015, Spring 2015, Fall 2014, Spring 2014    </description>
     </item>
     
     <item>
-      <title>Software</title>
-      <link>/static/software/</link>
-      <pubDate>Sat, 22 Dec 2018 14:54:43 +0000</pubDate>
+      <title>Publications</title>
+      <link>https://fboehm.us/static/publications/</link>
+      <pubDate>Fri, 28 Dec 2018 15:59:17 +0000</pubDate>
       
-      <guid>/static/software/</guid>
+      <guid>https://fboehm.us/static/publications/</guid>
+      <description>Peer-reviewed journal articles Tauchman, E. C, F. J. Boehm and J. G. DeLuca (2015). “Stable kinetochore-microtubule attachment is sufficient to silence the spindle assembly checkpoint in human cells”.</description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>https://fboehm.us/static/software/</link>
+      <pubDate>Fri, 28 Dec 2018 15:59:17 +0000</pubDate>
+      
+      <guid>https://fboehm.us/static/software/</guid>
       <description>  qtl2pleio: Testing pleiotropy vs. separate QTL in multiparental populations  
  gemma2: Multivariate random effects for genetics studies 
   </description>
     </item>
     
     <item>
-      <title>Publications</title>
-      <link>/static/publications/</link>
-      <pubDate>Sat, 22 Dec 2018 14:54:42 +0000</pubDate>
-      
-      <guid>/static/publications/</guid>
-      <description>Peer-reviewed journal articles Tauchman, E. C, F. J. Boehm and J. G. DeLuca (2015). “Stable kinetochore-microtubule attachment is sufficient to silence the spindle assembly checkpoint in human cells”.</description>
-    </item>
-    
-    <item>
       <title>Presentations</title>
-      <link>/static/presentations/</link>
-      <pubDate>Sat, 22 Dec 2018 14:54:40 +0000</pubDate>
+      <link>https://fboehm.us/static/presentations/</link>
+      <pubDate>Fri, 28 Dec 2018 15:59:14 +0000</pubDate>
       
-      <guid>/static/presentations/</guid>
+      <guid>https://fboehm.us/static/presentations/</guid>
       <description>International Mammalian Genome Conference, November 11-14, 2018, Rio Mar, Puerto Rico    Winner of best poster award  Joint Statistical Meetings, August 1, 2018, Vancouver, British Columbia, Canada</description>
     </item>
     
