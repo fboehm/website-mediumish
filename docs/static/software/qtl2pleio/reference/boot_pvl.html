@@ -139,7 +139,7 @@
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>probs</th>
-      <td><p>founder allele probabilities object for one chromosome only, like aprobs$`8`. Not a list</p></td>
+      <td><p>founder allele probabilities three-dimensional array for one chromosome only (not a list)</p></td>
     </tr>
     <tr>
       <th>pheno</th>
@@ -147,7 +147,7 @@
     </tr>
     <tr>
       <th>addcovar</th>
-      <td><p>n by n.cov matrix of additive numeric covariates</p></td>
+      <td><p>n by c matrix of additive numeric covariates</p></td>
     </tr>
     <tr>
       <th>kinship</th>
@@ -163,11 +163,11 @@
     </tr>
     <tr>
       <th>pleio_peak_index</th>
-      <td><p>positive integer index indicating design matrix for simulation. Typically acquired by using `find_pleio_peak_tib`.</p></td>
+      <td><p>positive integer index indicating genotype matrix for bootstrap sampling. Typically acquired by using `find_pleio_peak_tib`.</p></td>
     </tr>
     <tr>
       <th>nboot_per_job</th>
-      <td><p>number of bootstrap samples to call per invocation of function</p></td>
+      <td><p>number of bootstrap samples to acquire per function invocation</p></td>
     </tr>
     <tr>
       <th>max_iter</th>
@@ -185,7 +185,7 @@
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>numeric vector of lrt statistics from `nboot_per_job` bootstrap samples</p>
+    <p>numeric vector of (log) likelihood ratio test statistics from `nboot_per_job` bootstrap samples</p>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
@@ -220,6 +220,7 @@ Genet. Res. 71: 171–180.</p>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/colnames'>colnames</a></span>(<span class='no'>probs</span>) <span class='kw'>&lt;-</span> <span class='st'>'A'</span>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/dimnames'>dimnames</a></span>(<span class='no'>probs</span>)<span class='kw'>[[</span><span class='fl'>3</span>]] <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/paste'>paste0</a></span>(<span class='st'>'Marker'</span>, <span class='fl'>1</span>:<span class='fl'>10</span>)
 <span class='co'># define Y</span>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Random'>set.seed</a></span>(<span class='fl'>2018</span>-<span class='fl'>12</span>-<span class='fl'>29</span>)
 <span class='no'>Y_pre</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/stats/topics/Uniform'>runif</a></span>(<span class='fl'>200</span>)
 <span class='no'>Y</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/matrix'>matrix</a></span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>Y_pre</span>, <span class='kw'>nrow</span> <span class='kw'>=</span> <span class='fl'>100</span>)
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/colnames'>rownames</a></span>(<span class='no'>Y</span>) <span class='kw'>&lt;-</span> <span class='no'>s_id</span>
@@ -232,7 +233,6 @@ Genet. Res. 71: 171–180.</p>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/colnames'>colnames</a></span>(<span class='no'>kin</span>) <span class='kw'>&lt;-</span> <span class='no'>s_id</span>
 <span class='no'>Y2</span> <span class='kw'>&lt;-</span> <span class='no'>Y</span>
 <span class='no'>Y2</span>[<span class='fl'>1</span>, <span class='fl'>2</span>] <span class='kw'>&lt;-</span> <span class='fl'>NA</span>
-<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Random'>set.seed</a></span>(<span class='fl'>2018</span>-<span class='fl'>10</span>-<span class='fl'>22</span>)
 <span class='fu'>boot_pvl</span>(<span class='kw'>probs</span> <span class='kw'>=</span> <span class='no'>probs</span>, <span class='kw'>pheno</span> <span class='kw'>=</span> <span class='no'>Y</span>, <span class='kw'>kinship</span> <span class='kw'>=</span> <span class='no'>kin</span>,
         <span class='kw'>start_snp</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>n_snp</span> <span class='kw'>=</span> <span class='fl'>10</span>, <span class='kw'>pleio_peak_index</span> <span class='kw'>=</span> <span class='fl'>10</span>, <span class='kw'>nboot_per_job</span> <span class='kw'>=</span> <span class='fl'>1</span>)</div><div class='output co'>#&gt; <span class='message'>starting covariance matrices estimation with data from 100 subjects.</span></div><div class='output co'>#&gt; <span class='message'>covariance matrices estimation completed.</span></div><div class='output co'>#&gt; [1] 0</div><div class='input'><span class='fu'>boot_pvl</span>(<span class='kw'>probs</span> <span class='kw'>=</span> <span class='no'>probs</span>, <span class='kw'>pheno</span> <span class='kw'>=</span> <span class='no'>Y2</span>, <span class='kw'>kinship</span> <span class='kw'>=</span> <span class='no'>kin</span>,
         <span class='kw'>start_snp</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>n_snp</span> <span class='kw'>=</span> <span class='fl'>10</span>, <span class='kw'>pleio_peak_index</span> <span class='kw'>=</span> <span class='fl'>10</span>, <span class='kw'>nboot_per_job</span> <span class='kw'>=</span> <span class='fl'>2</span>)</div><div class='output co'>#&gt; <span class='message'>starting covariance matrices estimation with data from 99 subjects.</span></div><div class='output co'>#&gt; <span class='message'>covariance matrices estimation completed.</span></div><div class='output co'>#&gt; <span class='message'>starting covariance matrices estimation with data from 99 subjects.</span></div><div class='output co'>#&gt; <span class='message'>covariance matrices estimation completed.</span></div><div class='output co'>#&gt; [1] 0 0</div><div class='input'>

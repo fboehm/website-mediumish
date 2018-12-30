@@ -130,13 +130,13 @@
     
     </div>
 
-    <pre class="usage"><span class='fu'>add_intercepts</span>(<span class='no'>dat</span>, <span class='no'>intercepts_univariate</span>)</pre>
+    <pre class="usage"><span class='fu'>add_intercepts</span>(<span class='no'>tib</span>, <span class='no'>intercepts_univariate</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>dat</th>
+      <th>tib</th>
       <td><p>a tibble that results from tidy_scan_pvl acting on a log likelihood matrix</p></td>
     </tr>
     <tr>
@@ -153,6 +153,40 @@
   <code><a href='transform_loglik_mat.html'>transform_loglik_mat</a></code></p></div>
     
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='co'># read data</span>
+<span class='no'>iron</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>qtl2</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/qtl2/topics/read_cross2'>read_cross2</a></span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/system.file'>system.file</a></span>(<span class='st'>"extdata"</span>, <span class='st'>"iron.zip"</span>, <span class='kw'>package</span><span class='kw'>=</span><span class='st'>"qtl2"</span>))
+<span class='co'># insert pseudomarkers into map</span>
+<span class='no'>map</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>qtl2</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/qtl2/topics/insert_pseudomarkers'>insert_pseudomarkers</a></span>(<span class='no'>iron</span>$<span class='no'>gmap</span>, <span class='kw'>step</span><span class='kw'>=</span><span class='fl'>1</span>)
+<span class='co'># calculate genotype probabilities</span>
+<span class='no'>probs</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>qtl2</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/qtl2/topics/calc_genoprob'>calc_genoprob</a></span>(<span class='no'>iron</span>, <span class='no'>map</span>, <span class='kw'>error_prob</span><span class='kw'>=</span><span class='fl'>0.002</span>)
+<span class='co'># grab phenotypes and covariates; ensure that covariates have names attribute</span>
+<span class='no'>pheno</span> <span class='kw'>&lt;-</span> <span class='no'>iron</span>$<span class='no'>pheno</span>
+<span class='co'># leave-one-chromosome-out kinship matrices</span>
+<span class='no'>kinship</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>qtl2</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/qtl2/topics/calc_kinship'>calc_kinship</a></span>(<span class='no'>probs</span>, <span class='st'>"loco"</span>)$<span class='no'>`1`</span>
+<span class='co'># get founder allele probabilites</span>
+<span class='no'>probs</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>qtl2</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/qtl2/topics/genoprob_to_alleleprob'>genoprob_to_alleleprob</a></span>(<span class='no'>probs</span>)$<span class='no'>`1`</span>
+<span class='no'>ac</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/matrix'>matrix</a></span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/numeric'>as.numeric</a></span>(<span class='no'>iron</span>$<span class='no'>covar</span>$<span class='no'>sex</span> <span class='kw'>==</span> <span class='st'>"m"</span>, <span class='kw'>ncol</span> <span class='kw'>=</span> <span class='fl'>1</span>))
+<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/colnames'>colnames</a></span>(<span class='no'>ac</span>) <span class='kw'>&lt;-</span> <span class='st'>"sex"</span>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/colnames'>rownames</a></span>(<span class='no'>ac</span>) <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/colnames'>rownames</a></span>(<span class='no'>probs</span>)
+<span class='no'>ss</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='scan_pvl.html'>scan_pvl</a></span>(<span class='kw'>probs</span> <span class='kw'>=</span> <span class='no'>probs</span>, <span class='kw'>pheno</span> <span class='kw'>=</span> <span class='no'>pheno</span>, <span class='kw'>kinship</span> <span class='kw'>=</span> <span class='no'>kinship</span>, <span class='kw'>addcovar</span> <span class='kw'>=</span> <span class='no'>ac</span>,
+<span class='kw'>start_snp</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>n_snp</span> <span class='kw'>=</span> <span class='fl'>80</span>, <span class='kw'>n_cores</span> <span class='kw'>=</span> <span class='fl'>1</span>)</div><div class='output co'>#&gt; <span class='message'>starting covariance matrices estimation with data from 284 subjects.</span></div><div class='output co'>#&gt; <span class='message'>covariance matrices estimation completed.</span></div><div class='input'><span class='fu'><a href='tidy_scan_pvl.html'>tidy_scan_pvl</a></span>(<span class='no'>ss</span>, <span class='kw'>pm</span> <span class='kw'>=</span> <span class='no'>map</span>) <span class='kw'>-&gt;</span> <span class='no'>tidy_ss</span>
+<span class='co'># in practice, use the univariate peaks for each trait.</span>
+<span class='co'># here, we add arbitrary univariate peaks to illustrate function use.</span>
+<span class='fu'>add_intercepts</span>(<span class='kw'>tib</span> <span class='kw'>=</span> <span class='no'>tidy_ss</span>, <span class='kw'>intercepts_univariate</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='fl'>8</span>, <span class='fl'>10</span>))</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 240 x 6</span><span>
+#&gt;    marker_position     lod trace intercept_uni intercept_pleio intercept_biv
+#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;list&gt;</span><span>            </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>         </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;list&gt;</span><span>          </span><span style='color: #555555;font-style: italic;'>&lt;list&gt;</span><span>       
+#&gt; </span><span style='color: #555555;'> 1</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>           0      pleio            </span><span style='color: #BB0000;'>NA</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          </span><span style='color: #555555;'>&lt;lgl [1]&gt;</span><span>    
+#&gt; </span><span style='color: #555555;'> 2</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          -</span><span style='color: #BB0000;'>0.032</span><span style='color: #BB0000;text-decoration: underline;'>6</span><span> pleio            </span><span style='color: #BB0000;'>NA</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          </span><span style='color: #555555;'>&lt;lgl [1]&gt;</span><span>    
+#&gt; </span><span style='color: #555555;'> 3</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          -</span><span style='color: #BB0000;'>0.068</span><span style='color: #BB0000;text-decoration: underline;'>1</span><span> pleio            </span><span style='color: #BB0000;'>NA</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          </span><span style='color: #555555;'>&lt;lgl [1]&gt;</span><span>    
+#&gt; </span><span style='color: #555555;'> 4</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          -</span><span style='color: #BB0000;'>0.106</span><span>  pleio            </span><span style='color: #BB0000;'>NA</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          </span><span style='color: #555555;'>&lt;lgl [1]&gt;</span><span>    
+#&gt; </span><span style='color: #555555;'> 5</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          -</span><span style='color: #BB0000;'>0.148</span><span>  pleio            </span><span style='color: #BB0000;'>NA</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          </span><span style='color: #555555;'>&lt;lgl [1]&gt;</span><span>    
+#&gt; </span><span style='color: #555555;'> 6</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          -</span><span style='color: #BB0000;'>0.191</span><span>  pleio            </span><span style='color: #BB0000;'>NA</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          </span><span style='color: #555555;'>&lt;lgl [1]&gt;</span><span>    
+#&gt; </span><span style='color: #555555;'> 7</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          -</span><span style='color: #BB0000;'>0.237</span><span>  pleio            </span><span style='color: #BB0000;'>NA</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          </span><span style='color: #555555;'>&lt;lgl [1]&gt;</span><span>    
+#&gt; </span><span style='color: #555555;'> 8</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          -</span><span style='color: #BB0000;'>0.286</span><span>  pleio            </span><span style='color: #BB0000;'>NA</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          </span><span style='color: #555555;'>&lt;lgl [1]&gt;</span><span>    
+#&gt; </span><span style='color: #555555;'> 9</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          -</span><span style='color: #BB0000;'>0.336</span><span>  pleio            </span><span style='color: #BB0000;'>NA</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          </span><span style='color: #555555;'>&lt;lgl [1]&gt;</span><span>    
+#&gt; </span><span style='color: #555555;'>10</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          -</span><span style='color: #BB0000;'>0.388</span><span>  pleio            </span><span style='color: #BB0000;'>NA</span><span> </span><span style='color: #555555;'>&lt;NULL&gt;</span><span>          </span><span style='color: #555555;'>&lt;lgl [1]&gt;</span><span>    
+#&gt; </span><span style='color: #555555;'># ... with 230 more rows</span><span></div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -160,7 +194,9 @@
       <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#see-also">See also</a></li>
-          </ul>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>

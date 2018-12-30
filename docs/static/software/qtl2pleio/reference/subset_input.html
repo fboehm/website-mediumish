@@ -162,17 +162,17 @@ are ordered to match the ordering of subject ids in the vector `id2keep`. This
 <span class='co'># set up input matrix</span>
 <span class='no'>foo</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/matrix'>matrix</a></span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/stats/topics/Normal'>rnorm</a></span>(<span class='fl'>10</span> * <span class='fl'>3</span>), <span class='kw'>nrow</span> <span class='kw'>=</span> <span class='fl'>10</span>, <span class='kw'>ncol</span> <span class='kw'>=</span> <span class='fl'>3</span>)
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/colnames'>rownames</a></span>(<span class='no'>foo</span>) <span class='kw'>&lt;-</span> <span class='no'>s_id</span>
-<span class='fu'>subset_input</span>(<span class='kw'>input</span> <span class='kw'>=</span> <span class='no'>foo</span>, <span class='kw'>id2keep</span> <span class='kw'>=</span> <span class='no'>s_id</span>)</div><div class='output co'>#&gt;            [,1]        [,2]       [,3]
-#&gt; s1  -0.58842023 -0.87001689 -0.2273689
-#&gt; s2  -0.89053995  0.54692585  1.3038703
-#&gt; s3  -0.46918365 -1.31202805  1.2754842
-#&gt; s4   1.16422669  0.49725170  0.3281084
-#&gt; s5  -1.31710040  1.23153858  0.6887350
-#&gt; s6   0.99218680  0.22944083  0.3979102
-#&gt; s7  -0.61282471 -1.13371963  0.3745270
-#&gt; s8  -0.46957487 -0.69196963 -1.5546580
-#&gt; s9  -0.03621951 -0.01220178  0.1589274
-#&gt; s10  1.09810709 -1.52733578 -2.5352605</div></pre>
+<span class='fu'>subset_input</span>(<span class='kw'>input</span> <span class='kw'>=</span> <span class='no'>foo</span>, <span class='kw'>id2keep</span> <span class='kw'>=</span> <span class='no'>s_id</span>)</div><div class='output co'>#&gt;            [,1]       [,2]        [,3]
+#&gt; s1  -0.22548127  0.4857902  0.29421393
+#&gt; s2  -0.68420095  0.7161815 -1.68415647
+#&gt; s3  -0.01993182 -2.2510505  0.93383131
+#&gt; s4  -1.93479063  1.0937182  0.42744496
+#&gt; s5  -0.70050770 -1.7839703 -0.23014714
+#&gt; s6   0.67013990 -1.5328722 -1.47170702
+#&gt; s7  -2.43976730  1.2063087 -1.02848618
+#&gt; s8   0.79516188  1.2727689  0.21003508
+#&gt; s9  -0.10409129 -0.5916066 -0.27167518
+#&gt; s10 -0.88304295  0.7233588 -0.04942043</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
