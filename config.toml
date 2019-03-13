@@ -22,7 +22,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   description = "Biostatistics, genetics, medicine, open science"
 
 [params.index]
-  picture = "/images/author.png"
+  picture = "/images/FredBoehm-cr-smallsize.jpg"
   title = "Frederick Boehm"
   subtitle = "Biostatistics, genetics, medicine, open science"
   mdtext = '''
