@@ -1,4 +1,5 @@
 .PHONY: all
+
 all: docs/static/software/qtl2pleio/logo.png qtl2pleio-pkgdown
 	Rscript -e 'blogdown::hugo_build()'
 
