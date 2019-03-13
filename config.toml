@@ -9,7 +9,7 @@ publishDir = "docs"
 disqusShortname = "fred3"
 googleAnalytics = "UA-46757486-5"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-
+min_version: 0.51
 
 [params]
   logo = "/images/vitruvian_mouse-small.jpg"
