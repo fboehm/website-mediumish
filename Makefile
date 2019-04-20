@@ -1,6 +1,6 @@
 .PHONY: all
 
-all: docs/static/software/qtl2pleio/logo.png docs/static/software/qtl2pleio
+all: docs/static/software/qtl2pleio/logo.png docs/static/software/qtl2pleio/index.html
 	Rscript -e 'blogdown::build_site()'
 
 docs/static/software/qtl2pleio/logo.png: ~/Documents/hex-sticker-qtl2pleio/qtl2pleio.png
