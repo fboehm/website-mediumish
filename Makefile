@@ -1,7 +1,7 @@
 .PHONY: all
 
 all: docs/static/software/qtl2pleio/logo.png docs/static/software/qtl2pleio
-	Rscript -e 'blogdown::hugo_build()'
+	Rscript -e 'blogdown::build_site()'
 
 docs/static/software/qtl2pleio/logo.png: ~/Documents/hex-sticker-qtl2pleio/qtl2pleio.png
 	cp ~/Documents/hex-sticker-qtl2pleio/qtl2pleio.png docs/static/software/qtl2pleio/logo.png
