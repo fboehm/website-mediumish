@@ -102,10 +102,16 @@
 <a href="#qtl2pleio" class="anchor"></a>qtl2pleio <img src="https://raw.githubusercontent.com/fboehm/qtl2pleio/master/man/figures/logo.png" align="right">
 </h1></div>
 
+<div id="overview" class="section level2">
+<h2 class="hasAnchor">
+<a href="#overview" class="anchor"></a>Overview</h2>
+<p><code>qtl2pleio</code> is a software package for use with the <a href="https://cran.r-project.org/">R statistical computing environment</a>. <code>qtl2pleio</code> is freely available for download and use. I share it under the <a href="https://opensource.org/licenses/mit-license.php">MIT license</a>. The user will also want to download and install the <a href="https://kbroman.org/qtl2/"><code>qtl2</code> R package</a>.</p>
+<p>Click <a href="https://mybinder.org/v2/gh/fboehm/qtl2pleio/master?urlpath=rstudio">here</a> to explore <code>qtl2pleio</code> within a live <a href="https://www.rstudio.com/">Rstudio</a> session in “the cloud”.</p>
+</div>
 <div id="goals" class="section level2">
 <h2 class="hasAnchor">
 <a href="#goals" class="anchor"></a>Goals</h2>
-<p>The goal of qtl2pleio is, for a pair of traits that show evidence for a QTL in a common region, to distinguish between pleiotropy (the null hypothesis, that they are affected by a common QTL) and the alternative that they are affected by separate QTL. It extends the likelihood ratio test of <a href="http://www.genetics.org/content/140/3/1111.long">Jiang and Zeng (1995)</a> for multiparental populations, such as Diversity Outbred mice, including the use of a linear mixed model to account for population structure. <code>qtl2pleio</code> data structures are those used in the <a href="https://kbroman.org/qtl2"><code>rqtl/qtl2</code></a> package.</p>
+<p>The goal of <code>qtl2pleio</code> is, for a pair of traits that show evidence for a QTL in a common region, to distinguish between pleiotropy (the null hypothesis, that they are affected by a common QTL) and the alternative that they are affected by separate QTL. It extends the likelihood ratio test of <a href="http://www.genetics.org/content/140/3/1111.long">Jiang and Zeng (1995)</a> for multiparental populations, such as Diversity Outbred mice, including the use of multivariate polygenic random effects to account for population structure. <code>qtl2pleio</code> data structures are those used in the <a href="https://kbroman.org/qtl2"><code>rqtl/qtl2</code></a> package.</p>
 </div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
@@ -248,7 +254,7 @@
 <a class="sourceLine" id="cb20-8" data-line-number="8">         <span class="dt">n_snp =</span> <span class="dv">25</span></a>
 <a class="sourceLine" id="cb20-9" data-line-number="9">         ))</a>
 <a class="sourceLine" id="cb20-10" data-line-number="10"><span class="co">#&gt;    user  system elapsed </span></a>
-<a class="sourceLine" id="cb20-11" data-line-number="11"><span class="co">#&gt;  79.247   2.036  81.553</span></a></code></pre></div>
+<a class="sourceLine" id="cb20-11" data-line-number="11"><span class="co">#&gt;  75.765   1.260  77.346</span></a></code></pre></div>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" data-line-number="1">(pvalue &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/mean">mean</a></span>(b_out <span class="op">&gt;=</span><span class="st"> </span>lrt))</a>
 <a class="sourceLine" id="cb21-2" data-line-number="2"><span class="co">#&gt; [1] 1</span></a></code></pre></div>
 </div>

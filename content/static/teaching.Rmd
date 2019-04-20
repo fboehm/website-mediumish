@@ -9,14 +9,18 @@ bibliography: boehm.bib
 
 ## Short courses and workshops
 
+- Data Carpentry Social Sciences
+    - January 25-26, 2019, Arlington, Virginia, USA  [![website](../../images/html-icon.png)]( https://fboehm.github.io/2019-01-25-gmu/ "Course website")
+
 - Data Carpentry Genomics  
-    - September 15-16, 2018, Rolla, Missouri, USA: https://yeemey.github.io/2018-09-15-und-mbdh/
+    - September 15-16, 2018, Rolla, Missouri, USA  [![website](../../images/html-icon.png)]( https://yeemey.github.io/2018-09-15-und-mbdh/ "Course website")
+
     
 - Preparing to teach statistics (instructor)  
     - Spring 2018
 
 - Topic models for computational text analysis
-    - Spring 2014, Summer 2016
+    - Summer 2016, Fall 2013
 
     
     

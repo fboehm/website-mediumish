@@ -8,7 +8,7 @@ bibliography: boehm.bib
 
 
 - International Mammalian Genome Conference, November 11-14, 2018, Rio Mar, Puerto Rico
-[![html](../../images/pdf-icon.png)](https://github.com/fboehm/imgc2018-poster-latex2/blob/master/imgc2018-poster.pdf "Poster pdf")
+[![pdf](../../images/pdf-icon.png)](https://github.com/fboehm/imgc2018-poster-latex2/blob/master/imgc2018-poster.pdf "Poster pdf")
 [![github](../../images/github-icon.png)](https://github.com/fboehm/imgc2018-poster-latex2 "Github repository")  
     - Winner of best poster award
 
