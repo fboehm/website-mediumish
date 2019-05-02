@@ -121,7 +121,7 @@
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/install.packages">install.packages</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"qtl2"</span>, <span class="st">"qtl2convert"</span>), <span class="dt">repos=</span><span class="st">"http://rqtl.org/qtl2cran"</span>)</a>
 <a class="sourceLine" id="cb2-2" data-line-number="2"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb2-3" data-line-number="3"><span class="co">#&gt; The downloaded binary packages are in</span></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co">#&gt;  /var/folders/wd/lxmyvz590xb81c5z1j88b3800000gn/T//Rtmp03U9fY/downloaded_packages</span></a></code></pre></div>
+<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co">#&gt;  /var/folders/wd/lxmyvz590xb81c5z1j88b3800000gn/T//RtmpIDfOOZ/downloaded_packages</span></a></code></pre></div>
 </div>
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
@@ -198,63 +198,56 @@
 <p>Let’s perform univariate QTL mapping for each of the two traits in the Y matrix.</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1">s1 &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/qtl2/topics/scan1">scan1</a></span>(<span class="dt">genoprobs =</span> pr, <span class="dt">pheno =</span> Y, <span class="dt">kinship =</span> kinship)</a></code></pre></div>
 <p>Here is a plot of the results.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/graphics/topics/plot">plot</a></span>(s1, DOex<span class="op">$</span>pmap)</a>
-<a class="sourceLine" id="cb14-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/graphics/topics/plot">plot</a></span>(s1, DOex<span class="op">$</span>pmap, <span class="dt">lod=</span><span class="dv">2</span>, <span class="dt">col=</span><span class="st">"violetred"</span>, <span class="dt">add=</span><span class="ot">TRUE</span>)</a>
-<a class="sourceLine" id="cb14-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/graphics/topics/legend">legend</a></span>(<span class="st">"topleft"</span>, <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">colnames</a></span>(s1), <span class="dt">lwd=</span><span class="dv">2</span>, <span class="dt">col=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"darkslateblue"</span>, <span class="st">"violetred"</span>), <span class="dt">bg=</span><span class="st">"gray92"</span>)</a></code></pre></div>
-<p><img src="../../../Box%20Sync/Rpkgs/qtl2pleio/man/figures/README-1d-lod-plots-1.png" width="100%"></p>
+<p><img src="https://raw.githubusercontent.com/fboehm/qtl2pleio/master/man/figures/README-1d-lod-plots-1.png" width="100%"></p>
 <p>And here are the observed QTL peaks with LOD &gt; 8.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/qtl2/topics/find_peaks">find_peaks</a></span>(s1, <span class="dt">map =</span> DOex<span class="op">$</span>pmap, <span class="dt">threshold=</span><span class="dv">8</span>)</a>
-<a class="sourceLine" id="cb15-2" data-line-number="2"><span class="co">#&gt;   lodindex lodcolumn chr       pos      lod</span></a>
-<a class="sourceLine" id="cb15-3" data-line-number="3"><span class="co">#&gt; 1        1       tr1   3  82.77806 16.19704</span></a>
-<a class="sourceLine" id="cb15-4" data-line-number="4"><span class="co">#&gt; 2        2       tr2   3  82.77806 18.26406</span></a>
-<a class="sourceLine" id="cb15-5" data-line-number="5"><span class="co">#&gt; 3        2       tr2   X 103.79061 16.19708</span></a></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/qtl2/topics/find_peaks">find_peaks</a></span>(s1, <span class="dt">map =</span> DOex<span class="op">$</span>pmap, <span class="dt">threshold=</span><span class="dv">8</span>)</a>
+<a class="sourceLine" id="cb14-2" data-line-number="2"><span class="co">#&gt;   lodindex lodcolumn chr       pos      lod</span></a>
+<a class="sourceLine" id="cb14-3" data-line-number="3"><span class="co">#&gt; 1        1       tr1   3  82.77806 16.19704</span></a>
+<a class="sourceLine" id="cb14-4" data-line-number="4"><span class="co">#&gt; 2        2       tr2   3  82.77806 18.26406</span></a>
+<a class="sourceLine" id="cb14-5" data-line-number="5"><span class="co">#&gt; 3        2       tr2   X 103.79061 16.19708</span></a></code></pre></div>
 </div>
 <div id="perform-two-dimensional-scan-as-first-step-in-pleiotropy-vs-separate-qtl-hypothesis-test" class="section level3">
 <h3 class="hasAnchor">
 <a href="#perform-two-dimensional-scan-as-first-step-in-pleiotropy-vs-separate-qtl-hypothesis-test" class="anchor"></a>Perform two-dimensional scan as first step in pleiotropy vs. separate QTL hypothesis test</h3>
 <p>We now have the inputs that we need to do a pleiotropy vs. separate QTL test. We have the founder allele dosages for one chromosome, <em>i.e.</em>, Chr 3, in the R object <code>pp</code>, the matrix of two trait measurements in <code>Y</code>, and a LOCO-derived kinship matrix, <code>kinship[[2]]</code>.</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1">out &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/message">suppressMessages</a></span>(<span class="kw"><a href="reference/scan_pvl.html">scan_pvl</a></span>(<span class="dt">probs =</span> pp,</a>
-<a class="sourceLine" id="cb16-2" data-line-number="2">                <span class="dt">pheno =</span> Y,</a>
-<a class="sourceLine" id="cb16-3" data-line-number="3">                <span class="dt">kinship =</span> kinship[[<span class="dv">2</span>]], <span class="co"># 2nd entry in kinship list is Chr 3</span></a>
-<a class="sourceLine" id="cb16-4" data-line-number="4">                <span class="dt">start_snp =</span> <span class="dv">38</span>,</a>
-<a class="sourceLine" id="cb16-5" data-line-number="5">                <span class="dt">n_snp =</span> <span class="dv">25</span>, <span class="dt">n_cores =</span> <span class="dv">1</span></a>
-<a class="sourceLine" id="cb16-6" data-line-number="6">                ))</a></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1">out &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/message">suppressMessages</a></span>(<span class="kw"><a href="reference/scan_pvl.html">scan_pvl</a></span>(<span class="dt">probs =</span> pp,</a>
+<a class="sourceLine" id="cb15-2" data-line-number="2">                <span class="dt">pheno =</span> Y,</a>
+<a class="sourceLine" id="cb15-3" data-line-number="3">                <span class="dt">kinship =</span> kinship[[<span class="dv">2</span>]], <span class="co"># 2nd entry in kinship list is Chr 3</span></a>
+<a class="sourceLine" id="cb15-4" data-line-number="4">                <span class="dt">start_snp =</span> <span class="dv">38</span>,</a>
+<a class="sourceLine" id="cb15-5" data-line-number="5">                <span class="dt">n_snp =</span> <span class="dv">25</span>, <span class="dt">n_cores =</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb15-6" data-line-number="6">                ))</a></code></pre></div>
 </div>
 <div id="create-a-profile-lod-plot-to-visualize-results-of-two-dimensional-scan" class="section level3">
 <h3 class="hasAnchor">
 <a href="#create-a-profile-lod-plot-to-visualize-results-of-two-dimensional-scan" class="anchor"></a>Create a profile LOD plot to visualize results of two-dimensional scan</h3>
 <p>To visualize results from our two-dimensional scan, we calculate profile LOD for each trait. The code below makes use of the R package <code>ggplot2</code> to plot profile LODs over the scan region.</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(dplyr)</a>
-<a class="sourceLine" id="cb17-2" data-line-number="2">out <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb17-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="reference/tidy_scan_pvl.html">tidy_scan_pvl</a></span>(DOex<span class="op">$</span>pmap[[<span class="dv">2</span>]]) <span class="op">%&gt;%</span><span class="st"> </span><span class="co"># pmap[[2]] is physical map for Chr 3</span></a>
-<a class="sourceLine" id="cb17-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="reference/plot_pvl.html">plot_pvl</a></span>()</a></code></pre></div>
-<p><img src="../../../Box%20Sync/Rpkgs/qtl2pleio/man/figures/README-profile-plot-1.png" width="100%"></p>
+<p><img src="https://raw.githubusercontent.com/fboehm/qtl2pleio/master/man/figures/README-profile-plot-1.png" width="100%"></p>
 </div>
 <div id="calculate-the-likelihood-ratio-test-statistic-for-pleiotropy-v-separate-qtl" class="section level3">
 <h3 class="hasAnchor">
 <a href="#calculate-the-likelihood-ratio-test-statistic-for-pleiotropy-v-separate-qtl" class="anchor"></a>Calculate the likelihood ratio test statistic for pleiotropy v separate QTL</h3>
 <p>We use the function <code>calc_lrt_tib</code> to calculate the likelihood ratio test statistic value for the specified traits and specified genomic region.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1">(lrt &lt;-<span class="st"> </span><span class="kw"><a href="reference/calc_lrt_tib.html">calc_lrt_tib</a></span>(out))</a>
-<a class="sourceLine" id="cb18-2" data-line-number="2"><span class="co">#&gt; [1] 0</span></a></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1">(lrt &lt;-<span class="st"> </span><span class="kw"><a href="reference/calc_lrt_tib.html">calc_lrt_tib</a></span>(out))</a>
+<a class="sourceLine" id="cb16-2" data-line-number="2"><span class="co">#&gt; [1] 0</span></a></code></pre></div>
 </div>
 <div id="bootstrap-analysis-to-get-p-values" class="section level3">
 <h3 class="hasAnchor">
 <a href="#bootstrap-analysis-to-get-p-values" class="anchor"></a>Bootstrap analysis to get p-values</h3>
 <p>Before we call <code>boot_pvl</code>, we need to identify the index (on the chromosome under study) of the marker that maximizes the likelihood under the pleiotropy constraint. To do this, we use the <code>qtl2pleio</code> function <code>find_pleio_peak_tib</code>.</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" data-line-number="1">(pleio_index &lt;-<span class="st"> </span><span class="kw"><a href="reference/find_pleio_peak_tib.html">find_pleio_peak_tib</a></span>(out, <span class="dt">start_snp =</span> <span class="dv">38</span>))</a>
-<a class="sourceLine" id="cb19-2" data-line-number="2"><span class="co">#&gt; loglik13 </span></a>
-<a class="sourceLine" id="cb19-3" data-line-number="3"><span class="co">#&gt;       50</span></a></code></pre></div>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Random">set.seed</a></span>(<span class="dv">2018-11-25</span>) <span class="co"># set for reproducibility purposes.</span></a>
-<a class="sourceLine" id="cb20-2" data-line-number="2">b_out &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/message">suppressMessages</a></span>(<span class="kw"><a href="reference/boot_pvl.html">boot_pvl</a></span>(<span class="dt">probs =</span> pp,</a>
-<a class="sourceLine" id="cb20-3" data-line-number="3">         <span class="dt">pheno =</span> Y,</a>
-<a class="sourceLine" id="cb20-4" data-line-number="4">         <span class="dt">pleio_peak_index =</span> pleio_index,</a>
-<a class="sourceLine" id="cb20-5" data-line-number="5">         <span class="dt">kinship =</span> kinship[[<span class="dv">2</span>]], <span class="co"># 2nd element in kinship list is Chr 3</span></a>
-<a class="sourceLine" id="cb20-6" data-line-number="6">         <span class="dt">nboot_per_job =</span> <span class="dv">10</span>,</a>
-<a class="sourceLine" id="cb20-7" data-line-number="7">         <span class="dt">start_snp =</span> <span class="dv">38</span>,</a>
-<a class="sourceLine" id="cb20-8" data-line-number="8">         <span class="dt">n_snp =</span> <span class="dv">25</span></a>
-<a class="sourceLine" id="cb20-9" data-line-number="9">         ))</a></code></pre></div>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" data-line-number="1">(pvalue &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/mean">mean</a></span>(b_out <span class="op">&gt;=</span><span class="st"> </span>lrt))</a>
-<a class="sourceLine" id="cb21-2" data-line-number="2"><span class="co">#&gt; [1] 1</span></a></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" data-line-number="1">(pleio_index &lt;-<span class="st"> </span><span class="kw"><a href="reference/find_pleio_peak_tib.html">find_pleio_peak_tib</a></span>(out, <span class="dt">start_snp =</span> <span class="dv">38</span>))</a>
+<a class="sourceLine" id="cb17-2" data-line-number="2"><span class="co">#&gt; loglik13 </span></a>
+<a class="sourceLine" id="cb17-3" data-line-number="3"><span class="co">#&gt;       50</span></a></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Random">set.seed</a></span>(<span class="dv">2018-11-25</span>) <span class="co"># set for reproducibility purposes.</span></a>
+<a class="sourceLine" id="cb18-2" data-line-number="2">b_out &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/message">suppressMessages</a></span>(<span class="kw"><a href="reference/boot_pvl.html">boot_pvl</a></span>(<span class="dt">probs =</span> pp,</a>
+<a class="sourceLine" id="cb18-3" data-line-number="3">         <span class="dt">pheno =</span> Y,</a>
+<a class="sourceLine" id="cb18-4" data-line-number="4">         <span class="dt">pleio_peak_index =</span> pleio_index,</a>
+<a class="sourceLine" id="cb18-5" data-line-number="5">         <span class="dt">kinship =</span> kinship[[<span class="dv">2</span>]], <span class="co"># 2nd element in kinship list is Chr 3</span></a>
+<a class="sourceLine" id="cb18-6" data-line-number="6">         <span class="dt">nboot_per_job =</span> <span class="dv">10</span>,</a>
+<a class="sourceLine" id="cb18-7" data-line-number="7">         <span class="dt">start_snp =</span> <span class="dv">38</span>,</a>
+<a class="sourceLine" id="cb18-8" data-line-number="8">         <span class="dt">n_snp =</span> <span class="dv">25</span></a>
+<a class="sourceLine" id="cb18-9" data-line-number="9">         ))</a></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" data-line-number="1">(pvalue &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/mean">mean</a></span>(b_out <span class="op">&gt;=</span><span class="st"> </span>lrt))</a>
+<a class="sourceLine" id="cb19-2" data-line-number="2"><span class="co">#&gt; [1] 1</span></a></code></pre></div>
 </div>
 </div>
 <div id="code-of-conduct" class="section level2">
@@ -265,24 +258,24 @@
 <div id="citation-information" class="section level2">
 <h2 class="hasAnchor">
 <a href="#citation-information" class="anchor"></a>Citation information</h2>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb22-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/citation">citation</a></span>(<span class="st">"qtl2pleio"</span>)</a>
-<a class="sourceLine" id="cb22-2" data-line-number="2"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb22-3" data-line-number="3"><span class="co">#&gt; To cite qtl2pleio in publications use:</span></a>
-<a class="sourceLine" id="cb22-4" data-line-number="4"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb22-5" data-line-number="5"><span class="co">#&gt;   Boehm FJ, Chesler EJ, Yandell BS, Broman KW (2019) Testing</span></a>
-<a class="sourceLine" id="cb22-6" data-line-number="6"><span class="co">#&gt;   pleiotropy vs. separate QTL in multiparental populations Biorxiv</span></a>
-<a class="sourceLine" id="cb22-7" data-line-number="7"><span class="co">#&gt;   https://www.biorxiv.org/content/10.1101/550939v1</span></a>
-<a class="sourceLine" id="cb22-8" data-line-number="8"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb22-9" data-line-number="9"><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></a>
-<a class="sourceLine" id="cb22-10" data-line-number="10"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb22-11" data-line-number="11"><span class="co">#&gt;   @Article{Boehm2019testing,</span></a>
-<a class="sourceLine" id="cb22-12" data-line-number="12"><span class="co">#&gt;     title = {Testing pleiotropy vs. separate QTL in multiparental populations},</span></a>
-<a class="sourceLine" id="cb22-13" data-line-number="13"><span class="co">#&gt;     author = {Frederick J. Boehm and Elissa J. Chesler and Brian S. Yandell and Karl W. Broman},</span></a>
-<a class="sourceLine" id="cb22-14" data-line-number="14"><span class="co">#&gt;     journal = {Biorxiv},</span></a>
-<a class="sourceLine" id="cb22-15" data-line-number="15"><span class="co">#&gt;     year = {2019},</span></a>
-<a class="sourceLine" id="cb22-16" data-line-number="16"><span class="co">#&gt;     url = {https://www.biorxiv.org/content/10.1101/550939v1},</span></a>
-<a class="sourceLine" id="cb22-17" data-line-number="17"><span class="co">#&gt;     eprint = {https://www.biorxiv.org/content/early/2019/02/15/550939.full.pdf},</span></a>
-<a class="sourceLine" id="cb22-18" data-line-number="18"><span class="co">#&gt;   }</span></a></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/citation">citation</a></span>(<span class="st">"qtl2pleio"</span>)</a>
+<a class="sourceLine" id="cb20-2" data-line-number="2"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb20-3" data-line-number="3"><span class="co">#&gt; To cite qtl2pleio in publications use:</span></a>
+<a class="sourceLine" id="cb20-4" data-line-number="4"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb20-5" data-line-number="5"><span class="co">#&gt;   Boehm FJ, Chesler EJ, Yandell BS, Broman KW (2019) Testing</span></a>
+<a class="sourceLine" id="cb20-6" data-line-number="6"><span class="co">#&gt;   pleiotropy vs. separate QTL in multiparental populations Biorxiv</span></a>
+<a class="sourceLine" id="cb20-7" data-line-number="7"><span class="co">#&gt;   https://www.biorxiv.org/content/10.1101/550939v1</span></a>
+<a class="sourceLine" id="cb20-8" data-line-number="8"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb20-9" data-line-number="9"><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></a>
+<a class="sourceLine" id="cb20-10" data-line-number="10"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb20-11" data-line-number="11"><span class="co">#&gt;   @Article{Boehm2019testing,</span></a>
+<a class="sourceLine" id="cb20-12" data-line-number="12"><span class="co">#&gt;     title = {Testing pleiotropy vs. separate QTL in multiparental populations},</span></a>
+<a class="sourceLine" id="cb20-13" data-line-number="13"><span class="co">#&gt;     author = {Frederick J. Boehm and Elissa J. Chesler and Brian S. Yandell and Karl W. Broman},</span></a>
+<a class="sourceLine" id="cb20-14" data-line-number="14"><span class="co">#&gt;     journal = {Biorxiv},</span></a>
+<a class="sourceLine" id="cb20-15" data-line-number="15"><span class="co">#&gt;     year = {2019},</span></a>
+<a class="sourceLine" id="cb20-16" data-line-number="16"><span class="co">#&gt;     url = {https://www.biorxiv.org/content/10.1101/550939v1},</span></a>
+<a class="sourceLine" id="cb20-17" data-line-number="17"><span class="co">#&gt;     eprint = {https://www.biorxiv.org/content/early/2019/02/15/550939.full.pdf},</span></a>
+<a class="sourceLine" id="cb20-18" data-line-number="18"><span class="co">#&gt;   }</span></a></code></pre></div>
 </div>
 </div>
   </div>
