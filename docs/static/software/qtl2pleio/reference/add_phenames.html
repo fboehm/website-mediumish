@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Find the marker index corresponding to the peak of the pleiotropy trace in a tibble where the last column contains log likelihood values and the first d columns contain marker ids — find_pleio_peak_tib • qtl2pleio</title>
+<title>Replace old (default) trait names with true trait names — add_phenames • qtl2pleio</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -31,9 +31,9 @@
 
 
 
-<meta property="og:title" content="Find the marker index corresponding to the peak of the pleiotropy trace in a tibble where the last column contains log likelihood values and the first d columns contain marker ids — find_pleio_peak_tib" />
+<meta property="og:title" content="Replace old (default) trait names with true trait names — add_phenames" />
 
-<meta property="og:description" content="Find the marker index corresponding to the peak of the pleiotropy trace in a tibble where the last column contains log likelihood values and the first d columns contain marker ids" />
+<meta property="og:description" content="Replace old (default) trait names with true trait names" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -121,54 +121,43 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Find the marker index corresponding to the peak of the pleiotropy trace in a tibble where the last column contains log likelihood values and the first d columns contain marker ids</h1>
-    <small class="dont-index">Source: <a href='https://github.com/fboehm/qtl2pleio/blob/master/R/find_pleio_peak_tib.R'><code>R/find_pleio_peak_tib.R</code></a></small>
-    <div class="hidden name"><code>find_pleio_peak_tib.Rd</code></div>
+    <h1>Replace old (default) trait names with true trait names</h1>
+    <small class="dont-index">Source: <a href='https://github.com/fboehm/qtl2pleio/blob/master/R/tidy_scan_pvl.R'><code>R/tidy_scan_pvl.R</code></a></small>
+    <div class="hidden name"><code>add_phenames.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Find the marker index corresponding to the peak of the pleiotropy trace in a tibble where the last column contains log likelihood values and the first d columns contain marker ids</p>
+    <p>Replace old (default) trait names with true trait names</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>find_pleio_peak_tib</span>(<span class='no'>tib</span>, <span class='no'>start_snp</span>)</pre>
+    <pre class="usage"><span class='fu'>add_phenames</span>(<span class='no'>charvec</span>, <span class='no'>phe1</span>, <span class='no'>phe2</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>tib</th>
-      <td><p>a (d+1) column tibble with first d columns containing marker ids and the last containing log likelihood values. Typically this is the output from `scan_pvl`.</p></td>
+      <th>charvec</th>
+      <td><p>a character vector containing entries like "profile1" and "profile2"</p></td>
     </tr>
     <tr>
-      <th>start_snp</th>
-      <td><p>positive integer, from the two-dimensional scan, that indicates where the scan started on the chromosome</p></td>
+      <th>phe1</th>
+      <td><p>character vector of length 1 that is the true trait name for the first trait</p></td>
+    </tr>
+    <tr>
+      <th>phe2</th>
+      <td><p>character vector of length 1 that is the true trait name for the second trait</p></td>
     </tr>
     </table>
     
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>positive integer indicating marker index for maximum value of log lik under pleiotropy</p>
-    
-
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='no'>marker1</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/rep'>rep</a></span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/paste'>paste0</a></span>(<span class='st'>'SNP'</span>, <span class='fl'>1</span>:<span class='fl'>3</span>), <span class='kw'>times</span> <span class='kw'>=</span> <span class='fl'>3</span>)
-<span class='no'>marker2</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/rep'>rep</a></span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/paste'>paste0</a></span>(<span class='st'>'SNP'</span>, <span class='fl'>1</span>:<span class='fl'>3</span>), <span class='kw'>each</span> <span class='kw'>=</span> <span class='fl'>3</span>)
-<span class='no'>loglik</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/stats/topics/Uniform'>runif</a></span>(<span class='fl'>9</span>, -<span class='fl'>5</span>, <span class='fl'>0</span>)
-<span class='kw pkg'>tibble</span><span class='kw ns'>::</span><span class='fu'><a href='https://tibble.tidyverse.org/reference/tibble.html'>tibble</a></span>(<span class='no'>marker1</span>, <span class='no'>marker2</span>, <span class='no'>loglik</span>) <span class='kw'>-&gt;</span> <span class='no'>tib</span>
-<span class='fu'>find_pleio_peak_tib</span>(<span class='no'>tib</span>, <span class='kw'>start_snp</span> <span class='kw'>=</span> <span class='fl'>1</span>)</div><div class='output co'>#&gt; loglik3 
-#&gt;       3 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-      
-      <li><a href="#value">Value</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
+                </ul>
 
   </div>
 </div>

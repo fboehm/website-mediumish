@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Citation and Authors • qtl2pleio</title>
+<title>Summary • qtl2pleio</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -31,7 +31,7 @@
 
 
 
-<meta property="og:title" content="Citation and Authors" />
+<meta property="og:title" content="Summary" />
 
 
 
@@ -48,7 +48,7 @@
   </head>
 
   <body>
-    <div class="container template-citation-authors">
+    <div class="container template-title-body">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -118,33 +118,48 @@
 <div class="row">
   <div class="contents col-md-9">
     <div class="page-header">
-      <h1>Citation</h1>
-      <small class="dont-index">Source: <a href='https://github.com/fboehm/qtl2pleio/blob/master/inst/CITATION'><code>inst/CITATION</code></a></small>
+      <h1>Summary</h1>
     </div>
 
-    <p>Boehm FJ, Chesler EJ, Yandell BS, Broman KW (2019).
-&ldquo;Testing pleiotropy vs. separate QTL in multiparental populations.&rdquo;
-<em>Biorxiv</em>.
-https://www.biorxiv.org/content/early/2019/02/15/550939.full.pdf, <a href="https://www.biorxiv.org/content/10.1101/550939v1">https://www.biorxiv.org/content/10.1101/550939v1</a>. 
-</p>
-    <pre>@Article{Boehm2019testing,
-  title = {Testing pleiotropy vs. separate QTL in multiparental populations},
-  author = {Frederick J. Boehm and Elissa J. Chesler and Brian S. Yandell and Karl W. Broman},
-  journal = {Biorxiv},
-  year = {2019},
-  url = {https://www.biorxiv.org/content/10.1101/550939v1},
-  eprint = {https://www.biorxiv.org/content/early/2019/02/15/550939.full.pdf},
-}</pre>
-    <div class="page-header">
-      <h1>Authors</h1>
-    </div>
 
-    <ul class="list-unstyled">
-      <li>
-        <p><strong>Frederick Boehm</strong>. Author, maintainer. <a href='https://orcid.org/0000-0002-1644-5931' target='orcid.widget'><img src='https://members.orcid.org/sites/default/files/vector_iD_icon.svg' class='orcid' alt='ORCID' height='16'></a>
-        </p>
-      </li>
-    </ul>
+<hr>
+<p>title: ‘<code>qtl2pleio</code>: Testing pleiotropy vs. separate QTL in multiparental populations’ tags:</p>
+<ul>
+<li>R</li>
+<li>qtl2</li>
+<li>genetics</li>
+<li>systems genetics</li>
+<li>multiparental populations authors:</li>
+<li>name: Frederick Boehm orcid: 0000-0002-1644-5931 affiliation: “1” # (Multiple affiliations must be quoted)</li>
+<li>name: Brian Yandell orcid: 0000-0002-8774-9377 affiliation: “1”</li>
+<li>name: Karl W. Broman orcid: 0000-0002-4914-6671 affiliation: “2” affiliations:</li>
+<li>name: Department of Statistics, University of Wisconsin-Madison index: 1</li>
+<li>name: Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison index: 2 date: 26 April 2019 bibliography: paper.bib —</li>
+</ul>
+<div id="summary" class="section level1">
+
+<p>Modern quantitative trait locus (QTL) studies in multiparental populations offer opportunities to identify causal genes for thousands of clinical and molecular traits. Traditional analyses examine each trait by itself. However, to fully leverage this vast number of measured traits, the systems genetics community needs statistical tools to analyze multiple traits simultaneously [@<a href="mailto:jiang1995multiple;@korol1995interval" class="email">jiang1995multiple;@korol1995interval</a>]. A test of pleiotropy vs. separate QTL is one such tool that will aid dissection of complex trait genetics and enhance understanding of genetic architecture.</p>
+<p>@jiang1995multiple developed a pleiotropy test for two-parent crosses. For a pair of traits that map to a single genomic region, they formulated the test with the null hypothesis being pleiotropy (the two traits are affected by a single QTL) against the alternative hypothesis of two separate QTL, with each affecting exactly one trait in the pair.</p>
+<p>The test of @jiang1995multiple doesn’t directly apply to multiparental populations because</p>
+<ol>
+<li>Multiparental populations have more than two founders</li>
+<li>Multiparental populations have complicated pedigrees</li>
+</ol>
+<p>Additionally, the test statistic distribution, under the null hypothesis of pleiotropy, doesn’t follow a distribution with tabulated quantiles, like the chi-square with 1 degree of freedom. Thus, we need to implement a method for determining p-values.</p>
+<p>We addressed the first two challenges by adding a fixed effect for every founder line and incorporating a multivariate polygenic random effect into the linear model, which resulted in a multivariate linear mixed effects model [@<a href="mailto:kang2008efficient;@zhou2014efficient" class="email">kang2008efficient;@zhou2014efficient</a>]. We implemented a parametric bootstrap procedure to determine p-values for test statistics [@<a href="mailto:efron1979bootstrap;@tian2016dissection" class="email">efron1979bootstrap;@tian2016dissection</a>]. We describe details of our statistical methods elsewhere [@boehm2019testing].</p>
+<p><code>qtl2pleio</code> offers a convenient interface for those already analyzing data with <a href="https://kbroman.org/qtl2/"><code>qtl2</code></a>. The primary functions in <code>qtl2pleio</code> are <code>scan_pvl</code>, to perform the multivariate multi-QTL scan, and <code>boot_pvl</code>, to obtain bootstrap samples. We also include functions for visualizing results. <code>qtl2pleio</code> features three R package vignettes that demonstrate these and other <code>qtl2pleio</code> functions. One vignette provides examples for performing bootstrap analysis with a computing cluster. For quality assurance purposes, we incorporated unit tests into <code>qtl2pleio</code> via the R package <code>testthat</code> [@wickham2011testthat].</p>
+<p><code>qtl2pleio</code> uses <code>C++</code> code for model fitting via generalized least squares. We use the R package <code>Rcpp</code> to interface with our <code>C++</code> code [@eddelbuettel2011rcpp]. We also make use of the <code>C++</code> library <code>Eigen</code> via the R package <code>RcppEigen</code> [@bates2013fast].</p>
+</div>
+<div id="acknowledgments" class="section level1">
+<h1 class="hasAnchor">
+<a href="#acknowledgments" class="anchor"></a>Acknowledgments</h1>
+<p>This work was supported in part by National Institutes of Health grant R01GM070683 (to K.W.B.).</p>
+</div>
+<div id="references" class="section level1">
+<h1 class="hasAnchor">
+<a href="#references" class="anchor"></a>References</h1>
+</div>
+
 
   </div>
 
