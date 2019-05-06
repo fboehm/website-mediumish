@@ -27,7 +27,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   subtitle = "Biostatistics, genetics, medicine, open science"
   mdtext = '''
 I'm a biostatistician in Madison, Wisconsin, USA.\
-I'm studying for a Ph.D. in statistics at the University of Wisconsin-Madison.\
+I'll graduate in May 2019 with a Ph.D. in statistics from the University of Wisconsin-Madison.\
 My research is in statistical methods for systems genetics studies. In this \
 setting, my colleagues and I developed a hypothesis test of pleiotropy vs. separate QTL\
 in multiparental populations. We implemented our methods in the software package `qtl2pleio`.
