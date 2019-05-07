@@ -3,23 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/static/software/</loc>
-    <lastmod>2019-05-07T12:29:38+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/static/teaching/</loc>
-    <lastmod>2019-05-07T12:29:38+00:00</lastmod>
+    <lastmod>2019-05-07T13:09:55+00:00</lastmod>
   </url>
   
   <url>
     <loc>/static/publications/</loc>
-    <lastmod>2019-05-07T12:29:37+00:00</lastmod>
+    <lastmod>2019-05-07T13:09:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/static/software/</loc>
+    <lastmod>2019-05-07T13:09:54+00:00</lastmod>
   </url>
   
   <url>
     <loc>/static/presentations/</loc>
-    <lastmod>2019-05-07T12:29:35+00:00</lastmod>
+    <lastmod>2019-05-07T13:09:51+00:00</lastmod>
   </url>
   
   <url>
@@ -85,7 +85,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-05-07T12:29:38+00:00</lastmod>
+    <lastmod>2019-05-07T13:09:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -109,7 +109,7 @@
   
   <url>
     <loc>/static/</loc>
-    <lastmod>2019-05-07T12:29:38+00:00</lastmod>
+    <lastmod>2019-05-07T13:09:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
