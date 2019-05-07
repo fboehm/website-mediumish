@@ -2,7 +2,9 @@
 
 PPATH=~/Box\ Sync/Rpkgs/qtl2pleio
 
-all: docs/static/software/qtl2pleio/index.html
+all: docs/static/software/qtl2pleio/index.html docs/index.html
+	
+docs/index.html: config.toml index.Rmd
 	Rscript -e 'blogdown::build_site()'
 
 docs/static/software/qtl2pleio/index.html: $(PPATH)/R/*.R $(PPATH)/README.Rmd $(PPATH)/vignettes/*.Rmd $(PPATH)/man/*.Rd 
