@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R Package on Frederick Boehm&#39;s Website</title>
-    <link>https://fboehm.us/tags/r-package/</link>
-    <description>Recent content in R Package on Frederick Boehm&#39;s Website</description>
+    <title>R package on Frederick Boehm&#39;s Website</title>
+    <link>/tags/r-package/</link>
+    <description>Recent content in R package on Frederick Boehm&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Frederick Boehm</copyright>
-    <lastBuildDate>Sat, 24 Nov 2018 10:01:53 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 12 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://fboehm.us/tags/r-package/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/r-package/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Binder and Reproducibility</title>
+      <link>/blog/binder-and-reproducibility/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/binder-and-reproducibility/</guid>
+      <description>Karl Broman recently discussed the Binder project on his blog, so I thought that I would try to use it for my new R package qtl2pleio, which I have shared on Github.</description>
+    </item>
+    
+    <item>
       <title>R package site incorporation into my personal website</title>
-      <link>https://fboehm.us/blog/2018-11-24-r-package-site-with-pkgdown/</link>
+      <link>/blog/2018-11-24-r-package-site-with-pkgdown/</link>
       <pubDate>Sat, 24 Nov 2018 10:01:53 -0600</pubDate>
       
-      <guid>https://fboehm.us/blog/2018-11-24-r-package-site-with-pkgdown/</guid>
+      <guid>/blog/2018-11-24-r-package-site-with-pkgdown/</guid>
       <description>Overview I’ve been developing the R package qtl2pleio. It’s now at a stage where others can use it. I recently found the R package pkgdown, which allows developers to build, in an automated fashion, websites for their packages.</description>
     </item>
     
