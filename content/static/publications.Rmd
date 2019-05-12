@@ -13,7 +13,7 @@ library(RefManageR)
 ```
 
 ```{r, echo = FALSE}
-BibOptions(check.entries = FALSE, style = "markdown", bib.style = "authoryear", cite.style = 'alphabetic', sorting = "ydnt", style = "markdown", max.names = 6)
+BibOptions(check.entries = FALSE, style = "markdown", bib.style = "numeric", cite.style = 'alphabetic', sorting = "ydnt", style = "markdown", max.names = 6, hyperlink = "to.doc")
 ReadBib("boehm.bib", check = FALSE) -> boehm
 ```
 
@@ -23,21 +23,21 @@ ReadBib("boehm.bib", check = FALSE) -> boehm
 ```{r, results = 'asis', echo = FALSE}
 NoCite(boehm)
 arts <- boehm[bibtype = "article"]
-PrintBibliography(arts[keywords = "peer-reviewed"])
+PrintBibliography(arts[keywords = "peer-reviewed"], .opts = list(style = "text"))
 ```
 
 ## Other articles
 
 
 ```{r, results = "asis", echo = FALSE}
-PrintBibliography(arts[keywords = "other"])
+PrintBibliography(arts[keywords = "other"], .opts = list(style = "text"))
 ```
 
 ## Edited books
 
 
 ```{r, results = "asis", echo = FALSE}
-PrintBibliography(boehm[bibtype = "book"])
+PrintBibliography(boehm[bibtype = "book"], .opts = list(style = "text"))
 ```
 
 
@@ -46,7 +46,7 @@ PrintBibliography(boehm[bibtype = "book"])
 
 
 ```{r, results = "asis", echo = FALSE}
-PrintBibliography(boehm[bibtype = "incollection"])
+PrintBibliography(boehm[bibtype = "incollection"], .opts = list(style = "text"))
 ```
 
 
@@ -55,5 +55,5 @@ PrintBibliography(boehm[bibtype = "incollection"])
 
 
 ```{r, results = "asis", echo = FALSE}
-PrintBibliography(boehm[bibtype = "inproceedings"])
+PrintBibliography(boehm[bibtype = "inproceedings"], .opts = list(style = "text"))
 ```
