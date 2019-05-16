@@ -13,15 +13,6 @@
     
     
     <item>
-      <title>Pkgdown</title>
-      <link>https://fboehm.us/tags/pkgdown/</link>
-      <pubDate>Sat, 24 Nov 2018 10:01:53 -0600</pubDate>
-      
-      <guid>https://fboehm.us/tags/pkgdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>R</title>
       <link>https://fboehm.us/tags/r/</link>
       <pubDate>Sat, 24 Nov 2018 10:01:53 -0600</pubDate>
@@ -31,11 +22,20 @@
     </item>
     
     <item>
-      <title>R Package</title>
+      <title>R package</title>
       <link>https://fboehm.us/tags/r-package/</link>
       <pubDate>Sat, 24 Nov 2018 10:01:53 -0600</pubDate>
       
       <guid>https://fboehm.us/tags/r-package/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pkgdown</title>
+      <link>https://fboehm.us/tags/pkgdown/</link>
+      <pubDate>Sat, 24 Nov 2018 10:01:53 -0600</pubDate>
+      
+      <guid>https://fboehm.us/tags/pkgdown/</guid>
       <description></description>
     </item>
     
