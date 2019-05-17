@@ -15,12 +15,10 @@
             {{ with .Site.Params.index.subtitle }}
             <h3 class="index-sub">{{ . }}</h3>
             {{ end }}
-        </section>
-        <section class="text-justify">
             {{ with .Site.Params.index.mdtext }}
             <h6 class="index-text">{{ . | markdownify }}</h6>
             {{ end }}
-            </section>
+        </section>
     </div>
     {{- partial "_shared/social.html" . -}}
     {{ if isset .Site.Params.index "alertbar" }}
