@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Frederick Boehm</copyright>
-    <lastBuildDate>Sun, 12 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,9 +15,36 @@
     <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>clipboard</title>
+      <link>/tags/clipboard/</link>
+      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/clipboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>computing</title>
+      <link>/tags/computing/</link>
+      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>/tags/javascript/</link>
+      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/javascript/</guid>
       <description></description>
     </item>
     
@@ -36,15 +63,6 @@
       <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/binder/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>computing</title>
-      <link>/tags/computing/</link>
-      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/computing/</guid>
       <description></description>
     </item>
     

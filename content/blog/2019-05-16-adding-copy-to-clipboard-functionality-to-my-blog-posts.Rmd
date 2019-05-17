@@ -1,17 +1,13 @@
 ---
 title: "Adding Copy to Clipboard Functionality to My Blog Posts"
-author: Frederick Boehm
 date: 2019-05-16
 publishdate: 2019-05-16
 lastmod: 2019-05-16
-type: "post"
+tags: [computing, R, javascript, clipboard]
 comments: true
 draft: true
 slug: adding-copy-to-clipboard-to-my-blog-posts
-output:
-  html_document:
-    includes:
-      in_header: head.html
+type: "post"
 ---
 
 

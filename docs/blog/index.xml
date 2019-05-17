@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Frederick Boehm</copyright>
-    <lastBuildDate>Sun, 12 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Adding Copy to Clipboard Functionality to My Blog Posts</title>
+      <link>/blog/adding-copy-to-clipboard-to-my-blog-posts/</link>
+      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/adding-copy-to-clipboard-to-my-blog-posts/</guid>
+      <description>I use the R package blogdown to build my blog, but I really like the way that the R package pkgdown formats R code. In particular, it uses a javascript library, clipboard.</description>
+    </item>
     
     <item>
       <title>Binder and Reproducibility</title>

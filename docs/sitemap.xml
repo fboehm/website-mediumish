@@ -4,39 +4,39 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-05-16T11:25:42+00:00</lastmod>
+    <lastmod>2019-05-17T10:20:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/static/</loc>
-    <lastmod>2019-05-16T11:25:42+00:00</lastmod>
+    <lastmod>2019-05-17T10:20:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/static/teaching/</loc>
-    <lastmod>2019-05-16T11:25:42+00:00</lastmod>
+    <lastmod>2019-05-17T10:20:24+00:00</lastmod>
   </url>
   
   <url>
     <loc>/static/software/</loc>
-    <lastmod>2019-05-16T11:25:41+00:00</lastmod>
+    <lastmod>2019-05-17T10:20:23+00:00</lastmod>
   </url>
   
   <url>
     <loc>/static/publications/</loc>
-    <lastmod>2019-05-16T11:25:40+00:00</lastmod>
+    <lastmod>2019-05-17T10:20:22+00:00</lastmod>
   </url>
   
   <url>
     <loc>/static/presentations/</loc>
-    <lastmod>2019-05-16T11:25:38+00:00</lastmod>
+    <lastmod>2019-05-17T10:20:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/binder-and-reproducibility/</loc>
-    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
+    <loc>/blog/adding-copy-to-clipboard-to-my-blog-posts/</loc>
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -47,8 +47,37 @@
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/clipboard/</loc>
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/computing/</loc>
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/javascript/</loc>
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/blog/binder-and-reproducibility/</loc>
+    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -58,19 +87,7 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/binder/</loc>
-    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/computing/</loc>
     <lastmod>2019-05-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
