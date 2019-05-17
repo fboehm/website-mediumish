@@ -2,40 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Frederick Boehm&#39;s Website</title>
-    <link>https://fboehm.us/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Frederick Boehm&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Frederick Boehm</copyright>
-    <lastBuildDate>Sat, 24 Nov 2018 10:01:53 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 12 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://fboehm.us/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>R</title>
-      <link>https://fboehm.us/tags/r/</link>
-      <pubDate>Sat, 24 Nov 2018 10:01:53 -0600</pubDate>
+      <link>/tags/r/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://fboehm.us/tags/r/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R package</title>
-      <link>https://fboehm.us/tags/r-package/</link>
-      <pubDate>Sat, 24 Nov 2018 10:01:53 -0600</pubDate>
+      <link>/tags/r-package/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://fboehm.us/tags/r-package/</guid>
+      <guid>/tags/r-package/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>binder</title>
+      <link>/tags/binder/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/binder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>computing</title>
+      <link>/tags/computing/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reproducibility</title>
+      <link>/tags/reproducibility/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/reproducibility/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pkgdown</title>
-      <link>https://fboehm.us/tags/pkgdown/</link>
+      <link>/tags/pkgdown/</link>
       <pubDate>Sat, 24 Nov 2018 10:01:53 -0600</pubDate>
       
-      <guid>https://fboehm.us/tags/pkgdown/</guid>
+      <guid>/tags/pkgdown/</guid>
       <description></description>
     </item>
     

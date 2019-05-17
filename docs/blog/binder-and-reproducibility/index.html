@@ -6,7 +6,7 @@
 	
 	<link rel="icon" href="/images/vitruvian_mouse-small.jpg">
 	
-	<title>limmbo2 R package now on Github | Frederick Boehm&#39;s Website</title>
+	<title>Binder and Reproducibility | Frederick Boehm&#39;s Website</title>
 	
 	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -85,25 +85,25 @@
     <p>Share</p>
     <ul>
         <li class="ml-1 mr-1">
-        <a target="_blank" href="https://twitter.com/intent/tweet?text=limmbo2%20R%20package%20now%20on%20Github&url=%2fblog%2f2018-03-30-limmbo2-r-package-now-on-github%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=Binder%20and%20Reproducibility&url=%2fblog%2fbinder-and-reproducibility%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
         <i class="fab fa-twitter"></i>
         </a>
         </li>
         
         <li class="ml-1 mr-1">
-        <a target="_blank" href="https://facebook.com/sharer.php?u=%2fblog%2f2018-03-30-limmbo2-r-package-now-on-github%2f" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+        <a target="_blank" href="https://facebook.com/sharer.php?u=%2fblog%2fbinder-and-reproducibility%2f" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
         <i class="fab fa-facebook-f"></i>
         </a>
         </li>
         
         <li class="ml-1 mr-1">
-        <a target="_blank" href="https://plus.google.com/share?url=%2fblog%2f2018-03-30-limmbo2-r-package-now-on-github%2f" onclick="window.open(this.href, 'google-share', 'width=550,height=435');return false;">
+        <a target="_blank" href="https://plus.google.com/share?url=%2fblog%2fbinder-and-reproducibility%2f" onclick="window.open(this.href, 'google-share', 'width=550,height=435');return false;">
         <i class="fab fa-google"></i>
         </a>
         </li>
 
         <li class="ml-1 mr-1">
-        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=%2fblog%2f2018-03-30-limmbo2-r-package-now-on-github%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
+        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=%2fblog%2fbinder-and-reproducibility%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
         <i class="fab fa-xing"></i>
         </a>
         </li>        
@@ -135,9 +135,9 @@
                                 <span class="author-description">
                                     Biostatistics, genetics, medicine, open science<br>
                                     <i class="far fa-star"></i>
-                                    Mar 30, 2018
+                                    May 15, 2019
                                     <i class="far fa-clock clock"></i>
-                                    1 min read
+                                    2 min read
                                 </span>					
                             </div>
                         </div>			
@@ -145,10 +145,12 @@
                         
                                                 
                         
-                        <h1 class="posttitle">limmbo2 R package now on Github</h1> 
+                        <h1 class="posttitle">Binder and Reproducibility</h1> 
                     </div>
 
                     
+                    
+                        <img class="featured-image img-fluid" src="/images/blog/binder-logo.png" alt="thumbnail for this post">
                     
                     
                     
@@ -157,13 +159,49 @@
                         
 
 
-<p>I have posted to Github the R package <a href="https://github.com/fboehm/limmbo2"><code>limmbo2</code></a>. <code>limmbo2</code> is a R wrapper to the freely available python module <a href="https://github.com/HannahVMeyer/limmbo"><code>limmbo</code></a>. I mention my interest in <code>limmbo</code> in an earlier blog post, so I won’t repeat it here.</p>
+<p><a href="https://kbroman.org/">Karl Broman</a> recently discussed the Binder project on <a href="https://kbroman.org/blog/2019/02/18/omg_binder/">his blog</a>, so I thought that I would try to use it for my new R package <a href="https://fboehm.us/static/software/qtl2pleio/"><code>qtl2pleio</code></a>, which I have shared on <a href="https://github.com/fboehm/qtl2pleio/">Github</a>.</p>
+<p>As a R package developer, I like Binder because it allows a prospective user to explore my code (and the entire package) without requiring them to download it. Binder opens an interactive Rstudio session in “the cloud” to allow a user to run code online.</p>
+<div id="binder-setup" class="section level2">
+<h2>Binder setup</h2>
+<p>The <a href="https://mybinder.readthedocs.io/en/latest/">Binder documentation</a> lists several ways to set up Binder to work with a git repo with R code. I focus, in particular, on a git repo that is a proper R package that is publicly accessible on Github. My package <a href="https://github.com/fboehm/qtl2pleio/"><code>qtl2pleio</code></a> is the motivating example.</p>
+<p>The three methods for integrating Binder with a R project, to the best of my knowledge, all involve creation of additional files that reside in your R package on Github.</p>
+<ol style="list-style-type: decimal">
+<li><code>install.R</code> and <code>runtime.txt</code></li>
+<li><code>DESCRIPTION</code> and <code>runtime.txt</code></li>
+<li><code>Dockerfile</code></li>
+</ol>
+<p>From what I can tell, the three methods differ in the time needed for setup when a user launches a new session in the cloud. It seems that the last method is the fastest when no new commits have been pushed to the git repository on Github.</p>
+<p>The simplicity of merely adding a <code>runtime.txt</code> file to an existing R package repository makes the second option appealing.</p>
+</div>
+<div id="binder-and-qtl2pleio" class="section level2">
+<h2>Binder and <code>qtl2pleio</code></h2>
+</div>
 
                     </div>
                     
                     
                     <div class="after-post-tags">
                         <ul class="tags">
+                        
+                        <li>
+                        <a href="/tags/computing">computing</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/r">R</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/r-package">R package</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/binder">binder</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/reproducibility">reproducibility</a>
+                        </li>
                         
                         </ul>
                     </div>
@@ -172,10 +210,10 @@
                     
                     <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
                     
-                        <a class="d-block col-md-6" href="/blog/2018-04-01-reticulate-r-package-travis/"> &laquo; reticulate R package &amp; Travis</a>
+                        <a class="d-block col-md-6" href="/static/presentations/"> &laquo; Presentations</a>
                     
                     
-                        <a class="d-block col-md-6 text-lg-right" href="/blog/2018-03-19-getting-started-with-the-reticulate-r-package/">Getting started with the reticulate R package &raquo;</a>
+                        <a class="d-block col-md-6 text-lg-right" href="/blog/internet-social-media/">World-wide Web and Social Media &raquo;</a>
                     
                     <div class="clearfix"></div>
                     </div>
