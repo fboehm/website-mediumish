@@ -1,0 +1,25 @@
+---
+title: "Adding Copy to Clipboard Functionality to My Blog Posts"
+author: Frederick Boehm
+date: 2019-05-16
+publishdate: 2019-05-16
+lastmod: 2019-05-16
+type: "post"
+comments: true
+draft: true
+slug: adding-copy-to-clipboard-to-my-blog-posts
+output:
+  html_document:
+    includes:
+      in_header: head.html
+---
+
+
+I use the R package [blogdown](https://bookdown.org/yihui/blogdown/) to build my blog, but I really like the way that the R package [`pkgdown`](https://github.com/r-lib/pkgdown) formats R code. In particular, it uses a javascript library, [`clipboard.js`](https://cdnjs.cloudflare.com/ajax/libs/clipboard.js) to facilitate copying of R code from "articles" (i.e., rendered vignettes from an R package) to the user's clipboard. I wanted to see if I could use clipboard.js to add this feature to my blog posts. 
+
+I created a plain text file that contains html code that specifies the use of clipboard.js, sticky-kit.js, and the pkgdown js and css files.
+
+```{r}
+library(blogdown)
+```
+
