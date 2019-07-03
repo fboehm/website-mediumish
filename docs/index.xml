@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Frederick Boehm</copyright>
-    <lastBuildDate>Wed, 03 Jul 2019 15:27:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jul 2019 16:05:34 +0000</lastBuildDate>
     
 	<atom:link href="https://fboehm.us/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Teaching</title>
       <link>https://fboehm.us/static/teaching/</link>
-      <pubDate>Wed, 03 Jul 2019 15:27:19 +0000</pubDate>
+      <pubDate>Wed, 03 Jul 2019 16:05:34 +0000</pubDate>
       
       <guid>https://fboehm.us/static/teaching/</guid>
       <description> Short courses and workshops  Data Carpentry Social Sciences  January 25-26, 2019, Arlington, Virginia, USA   Data Carpentry Genomics  September 15-16, 2018, Rolla, Missouri, USA   Preparing to teach statistics (instructor)  Spring 2018  Topic models for computational text analysis  Summer 2016, Fall 2013    Formal courses  Educating a diverse nation (co-facilitator)  Spring 2017 (in-person) &amp;amp; Fall 2017 (online)  Introductory statistics (instructor of record)  Fall 2016, Spring 2016, Fall 2015, Summer 2015, Spring 2015, Fall 2014, Spring 2014    </description>
@@ -24,7 +24,7 @@
     <item>
       <title>Software</title>
       <link>https://fboehm.us/static/software/</link>
-      <pubDate>Wed, 03 Jul 2019 15:27:18 +0000</pubDate>
+      <pubDate>Wed, 03 Jul 2019 16:05:33 +0000</pubDate>
       
       <guid>https://fboehm.us/static/software/</guid>
       <description>  qtl2pleio: Testing pleiotropy vs. separate QTL in multiparental populations  
@@ -35,7 +35,7 @@
     <item>
       <title>Publications</title>
       <link>https://fboehm.us/static/publications/</link>
-      <pubDate>Wed, 03 Jul 2019 15:27:17 +0000</pubDate>
+      <pubDate>Wed, 03 Jul 2019 16:05:32 +0000</pubDate>
       
       <guid>https://fboehm.us/static/publications/</guid>
       <description>Peer-reviewed journal articles [1] F. J. Boehm, E. J. Chesler, B. S. Yandell, and K. W. Broman. “Testing pleiotropy vs. separate QTL in multiparental populations”.</description>
@@ -44,7 +44,7 @@
     <item>
       <title>Presentations</title>
       <link>https://fboehm.us/static/presentations/</link>
-      <pubDate>Wed, 03 Jul 2019 15:27:15 +0000</pubDate>
+      <pubDate>Wed, 03 Jul 2019 16:05:29 +0000</pubDate>
       
       <guid>https://fboehm.us/static/presentations/</guid>
       <description>International Mammalian Genome Conference, November 11-14, 2018, Rio Mar, Puerto Rico    Winner of best poster award  Joint Statistical Meetings, August 1, 2018, Vancouver, British Columbia, Canada</description>
