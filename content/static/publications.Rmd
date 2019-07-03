@@ -26,6 +26,14 @@ arts <- boehm[bibtype = "article"]
 PrintBibliography(arts[keywords = "peer-reviewed"], .opts = list(style = "text"))
 ```
 
+## Pre-prints
+
+```{r, results = "asis", echo = FALSE}
+PrintBibliography(arts[keywords = "preprint"], .opts = list(style = "text"))
+```
+
+
+
 ## Other articles
 
 
