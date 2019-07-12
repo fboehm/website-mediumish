@@ -3,6 +3,7 @@ title: "Publications"
 author: "Frederick Boehm" 
 output: html_document 
 bibliography: boehm.bib 
+csl: genetics.csl
 ---
 
 
@@ -12,7 +13,13 @@ library(RefManageR)
 ```
 
 ```{r, echo = FALSE}
-BibOptions(check.entries = FALSE, style = "markdown", bib.style = "numeric", cite.style = 'alphabetic', sorting = "ydnt", style = "markdown", max.names = 6, hyperlink = "to.doc")
+BibOptions(check.entries = FALSE, 
+           cite.style = 'pandoc', 
+           sorting = "ydnt", 
+           style = "markdown", 
+           max.names = 6, 
+           hyperlink = "to.doc"
+           )
 ReadBib("boehm.bib", check = FALSE) -> boehm
 ```
 

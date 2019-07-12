@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Frederick Boehm</copyright>
-    <lastBuildDate>Thu, 11 Jul 2019 21:25:17 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jul 2019 21:46:00 +0000</lastBuildDate>
     
 	<atom:link href="/static/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Presentations</title>
+      <link>/static/presentations/</link>
+      <pubDate>Thu, 11 Jul 2019 21:46:00 +0000</pubDate>
+      
+      <guid>/static/presentations/</guid>
+      <description>International Mammalian Genome Conference, November 11-14, 2018, Rio Mar, Puerto Rico    Winner of best poster award  Joint Statistical Meetings, August 1, 2018, Vancouver, British Columbia, Canada</description>
+    </item>
+    
+    <item>
       <title>Teaching</title>
       <link>/static/teaching/</link>
-      <pubDate>Thu, 11 Jul 2019 21:25:17 +0000</pubDate>
+      <pubDate>Thu, 11 Jul 2019 21:44:13 +0000</pubDate>
       
       <guid>/static/teaching/</guid>
       <description> Short courses and workshops  Data Carpentry Social Sciences  January 25-26, 2019, Arlington, Virginia, USA   Data Carpentry Genomics  September 15-16, 2018, Rolla, Missouri, USA   Preparing to teach statistics (instructor)  Spring 2018  Topic models for computational text analysis  Summer 2016, Fall 2013    Formal courses  Educating a diverse nation (co-facilitator)  Spring 2017 (in-person) &amp;amp; Fall 2017 (online)  Introductory statistics (instructor of record)  Fall 2016, Spring 2016, Fall 2015, Summer 2015, Spring 2015, Fall 2014, Spring 2014    </description>
@@ -24,21 +33,12 @@
     <item>
       <title>Software</title>
       <link>/static/software/</link>
-      <pubDate>Thu, 11 Jul 2019 21:25:16 +0000</pubDate>
+      <pubDate>Thu, 11 Jul 2019 21:44:12 +0000</pubDate>
       
       <guid>/static/software/</guid>
       <description>  qtl2pleio: Testing pleiotropy vs. separate QTL in multiparental populations  
  gemma2: Multivariate random effects for genetics studies 
   </description>
-    </item>
-    
-    <item>
-      <title>Presentations</title>
-      <link>/static/presentations/</link>
-      <pubDate>Thu, 11 Jul 2019 21:25:13 +0000</pubDate>
-      
-      <guid>/static/presentations/</guid>
-      <description>International Mammalian Genome Conference, November 11-14, 2018, Rio Mar, Puerto Rico    Winner of best poster award  Joint Statistical Meetings, August 1, 2018, Vancouver, British Columbia, Canada</description>
     </item>
     
     <item>
