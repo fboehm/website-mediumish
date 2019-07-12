@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Frederick Boehm&#39;s Website</title>
-    <link>/tags/</link>
+    <link>https://fboehm.us/tags/</link>
     <description>Recent content in Tags on Frederick Boehm&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Frederick Boehm</copyright>
     <lastBuildDate>Sat, 24 Nov 2018 10:01:53 -0600</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fboehm.us/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pkgdown</title>
+      <link>https://fboehm.us/tags/pkgdown/</link>
+      <pubDate>Sat, 24 Nov 2018 10:01:53 -0600</pubDate>
+      
+      <guid>https://fboehm.us/tags/pkgdown/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>https://fboehm.us/tags/r/</link>
       <pubDate>Sat, 24 Nov 2018 10:01:53 -0600</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>https://fboehm.us/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>R package</title>
-      <link>/tags/r-package/</link>
+      <title>R Package</title>
+      <link>https://fboehm.us/tags/r-package/</link>
       <pubDate>Sat, 24 Nov 2018 10:01:53 -0600</pubDate>
       
-      <guid>/tags/r-package/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pkgdown</title>
-      <link>/tags/pkgdown/</link>
-      <pubDate>Sat, 24 Nov 2018 10:01:53 -0600</pubDate>
-      
-      <guid>/tags/pkgdown/</guid>
+      <guid>https://fboehm.us/tags/r-package/</guid>
       <description></description>
     </item>
     
