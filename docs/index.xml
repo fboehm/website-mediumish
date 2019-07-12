@@ -33,15 +33,6 @@
     </item>
     
     <item>
-      <title>Publications</title>
-      <link>/static/publications/</link>
-      <pubDate>Thu, 11 Jul 2019 10:23:40 +0000</pubDate>
-      
-      <guid>/static/publications/</guid>
-      <description>Peer-reviewed journal articles [1] F. J. Boehm, E. J. Chesler, B. S. Yandell, and K. W. Broman. “Testing pleiotropy vs. separate QTL in multiparental populations”.</description>
-    </item>
-    
-    <item>
       <title>Presentations</title>
       <link>/static/presentations/</link>
       <pubDate>Thu, 11 Jul 2019 10:23:37 +0000</pubDate>
@@ -138,6 +129,15 @@
       
       <guid>/blog/2017-05-07-getting-started-with-blogdown/</guid>
       <description>While browsing the internet, I stumbled upon Rstudio’s new package blogdown. I read posts from Karl Broman and found the the book that the package author - Yihui Xie - freely shares.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>/static/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/static/publications/</guid>
+      <description>Peer-reviewed journal articles [1] F. J. Boehm, E. J. Chesler, B. S. Yandell, and K. W. Broman. “Testing pleiotropy vs. separate QTL in multiparental populations”.</description>
     </item>
     
   </channel>

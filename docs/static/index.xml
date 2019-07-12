@@ -33,21 +33,21 @@
     </item>
     
     <item>
-      <title>Publications</title>
-      <link>/static/publications/</link>
-      <pubDate>Thu, 11 Jul 2019 10:23:40 +0000</pubDate>
-      
-      <guid>/static/publications/</guid>
-      <description>Peer-reviewed journal articles [1] F. J. Boehm, E. J. Chesler, B. S. Yandell, and K. W. Broman. “Testing pleiotropy vs. separate QTL in multiparental populations”.</description>
-    </item>
-    
-    <item>
       <title>Presentations</title>
       <link>/static/presentations/</link>
       <pubDate>Thu, 11 Jul 2019 10:23:37 +0000</pubDate>
       
       <guid>/static/presentations/</guid>
       <description>International Mammalian Genome Conference, November 11-14, 2018, Rio Mar, Puerto Rico    Winner of best poster award  Joint Statistical Meetings, August 1, 2018, Vancouver, British Columbia, Canada</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>/static/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/static/publications/</guid>
+      <description>Peer-reviewed journal articles [1] F. J. Boehm, E. J. Chesler, B. S. Yandell, and K. W. Broman. “Testing pleiotropy vs. separate QTL in multiparental populations”.</description>
     </item>
     
   </channel>
