@@ -1,5 +1,4 @@
 [build]
-publish = "static"
 command = "hugo --gc --minify"
 
 [context.production.environment]
