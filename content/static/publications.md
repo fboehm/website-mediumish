@@ -2,6 +2,7 @@
 title: "Publications" 
 output:
   html_document:
+    keep_md: true
     pandoc_args: --lua-filter=multiple-bibliographies.lua  
 csl: american-psychological-association-6th-edition.csl  
 nocite: |
